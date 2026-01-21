@@ -1,6 +1,6 @@
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getPostBySlug, getPostSlugs } from '@/lib/blog';

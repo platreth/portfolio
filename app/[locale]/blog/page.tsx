@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { ArrowRight, Calendar, Clock, Tag } from 'lucide-react';
 import { Metadata } from 'next';
 import { getAllPosts } from '@/lib/blog';

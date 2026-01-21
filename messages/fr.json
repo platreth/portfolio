@@ -38,7 +38,7 @@
         "title": "Parcours",
         "titleSuffix": "Professionnel",
         "zoomflowTitle": "Développeur Full-Stack Senior",
-        "zoomflowRole": "Zoomflow (Freelance)",
+        "zoomflowRole": "Zaamsflow (Freelance)",
         "zoomflowDate": "Sep 2023 - Présent",
         "zoomflowDesc": "Livraison d'applications web évolutives. Spécialisation en stacks PHP modernisées et intégration IA. Construction de systèmes <em>fiables</em>.",
         "rentmanTitle": "Développeur Back-end & Scrum Master",
@@ -46,7 +46,7 @@
         "rentmanDate": "Fév 2023 - Sep 2023",
         "rentmanDesc": "Direction du développement backend et des processus Scrum. Implémentation DDD et améliorations des systèmes legacy.",
         "tikanicaTitle": "Développeur Analyste",
-        "tikanicaRole": "Tikanica",
+        "tikanicaRole": "Tikamoon",
         "tikanicaDate": "Oct 2021 - Jan 2024",
         "tikanicaDesc": "Développement spécialisé haute performance. Gestion infrastructure Docker/Kubernetes et applications Symfony complexes."
     },

@@ -38,7 +38,7 @@
         "title": "Professionele",
         "titleSuffix": "Reis",
         "zoomflowTitle": "Senior Full-Stack Developer",
-        "zoomflowRole": "Zoomflow (Freelance)",
+        "zoomflowRole": "Zaamsflow (Freelance)",
         "zoomflowDate": "Sep 2023 - Heden",
         "zoomflowDesc": "Leveren van schaalbare webapplicaties. Gespecialiseerd in gemoderniseerde PHP-stacks en AI-integratie. <em>Betrouwbare</em> systemen bouwen die groei stimuleren.",
         "rentmanTitle": "Back-end Developer & Scrum Master",
@@ -46,7 +46,7 @@
         "rentmanDate": "Feb 2023 - Sep 2023",
         "rentmanDesc": "Leiding backend development en Scrum processen. DDD-implementatie en verbeteringen aan legacy systemen.",
         "tikanicaTitle": "Analist Developer",
-        "tikanicaRole": "Tikanica",
+        "tikanicaRole": "Tikamoon",
         "tikanicaDate": "Okt 2021 - Jan 2024",
         "tikanicaDesc": "High-performance gespecialiseerde ontwikkeling. Beheer van Docker/Kubernetes infrastructuur en complexe Symfony applicaties."
     },
