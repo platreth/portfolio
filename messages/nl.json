@@ -10,7 +10,7 @@
         "available": "Beschikbaar voor projecten in 2026 • Utrecht 🇳🇱",
         "titlePrefix": "Ik Bouw Autonome",
         "titleSuffix": "AI Workforce Oplossingen",
-        "description": "Senior Engineer (7j+) helpt organisaties betrouwbare <highlight>agentic workflows</highlight> in te zetten. Van concept tot productiecode.",
+        "description": "Senior Software Engineer (6j+) helpt organisaties betrouwbare <highlight>agentic workflows</highlight> in te zetten. Van concept tot productiecode.",
         "ctaStrategy": "Boek Strategiegesprek (Utrecht/Remote)",
         "ctaCases": "Bekijk Casestudies"
     },
@@ -19,7 +19,7 @@
         "titleSuffix": "AI-consultant inhuren?",
         "intro": "Huur geen gesilo-de AI-onderzoeker in. Huur een bouwer die de database, de API, <em>én</em> het LLM kent.",
         "bridgeTitle": "De Brug 🌉",
-        "bridgeDesc": "Ik overbrug de kloof tussen betrouwbare <strong>Legacy Engineering</strong> (PHP/Shopify) en <strong>Moderne AI</strong>. Ik schrijf niet alleen prompts; ik bouw de pijplijnen die AI veilig maken voor bedrijven.",
+        "bridgeDesc": "Ik overbrug de kloof tussen betrouwbare <strong>Legacy Engineering</strong> (PHP) en <strong>Moderne AI</strong>. Ik schrijf niet alleen prompts; ik bouw de pijplijnen die AI veilig maken voor bedrijven.",
         "stability": "Ik breng backend-stabiliteit in de chaos van generatieve AI. Ik zorg ervoor dat uw AI-functies <strong>veilig, schaalbaar en onderhoudbaar</strong> zijn."
     },
     "Services": {
@@ -44,7 +44,7 @@
         "rentmanTitle": "Back-end Developer & Scrum Master",
         "rentmanRole": "Rentman",
         "rentmanDate": "Feb 2023 - Sep 2023",
-        "rentmanDesc": "Leiding backend development en Scrum processen. DDD-implementatie en verbeteringen aan legacy systemen.",
+        "rentmanDesc": "Backend Developer & Scrum Master. DDD-implementatie en verbeteringen aan legacy systemen.",
         "tikanicaTitle": "Analist Developer",
         "tikanicaRole": "Tikamoon",
         "tikanicaDate": "Okt 2021 - Jan 2024",

@@ -10,7 +10,7 @@
         "available": "Disponible pour projets 2026 • Utrecht 🇳🇱",
         "titlePrefix": "Je Construis des",
         "titleSuffix": "Solutions AI Autonomes",
-        "description": "Ingénieur Senior (7 ans+) aidant les organisations à déployer des <highlight>workflows agentiques</highlight> fiables. Du concept au code en production.",
+        "description": "Ingénieur Logiciel Senior (6 ans+) aidant les organisations à déployer des <highlight>workflows agentiques</highlight> fiables. Du concept au code en production.",
         "ctaStrategy": "Réserver un Appel Stratégique",
         "ctaCases": "Voir les Études de Cas"
     },
@@ -19,7 +19,7 @@
         "titleSuffix": "Consultant IA ?",
         "intro": "N'engagez pas un chercheur en IA isolé. Engagez un constructeur qui connaît la base de données, l'API, <em>et</em> le LLM.",
         "bridgeTitle": "Le Pont 🌉",
-        "bridgeDesc": "Je comble le fossé entre <strong>l'Ingénierie Legacy</strong> fiable (PHP/Shopify) et <strong>l'IA Moderne</strong>. Je n'écris pas juste des prompts ; je construis les pipelines qui rendent l'IA sûre pour le business.",
+        "bridgeDesc": "Je comble le fossé entre <strong>l'Ingénierie Legacy</strong> fiable (PHP) et <strong>l'IA Moderne</strong>. Je n'écris pas juste des prompts ; je construis les pipelines qui rendent l'IA sûre pour le business.",
         "stability": "J'apporte la stabilité backend au chaos de l'IA générative. Je garantis que vos fonctionnalités IA sont <strong>sécurisées, évolutives et maintenables</strong>."
     },
     "Services": {
@@ -44,7 +44,7 @@
         "rentmanTitle": "Développeur Back-end & Scrum Master",
         "rentmanRole": "Rentman",
         "rentmanDate": "Fév 2023 - Sep 2023",
-        "rentmanDesc": "Direction du développement backend et des processus Scrum. Implémentation DDD et améliorations des systèmes legacy.",
+        "rentmanDesc": "Développeur Backend & Scrum Master. Implémentation DDD et améliorations des systèmes legacy.",
         "tikanicaTitle": "Développeur Analyste",
         "tikanicaRole": "Tikamoon",
         "tikanicaDate": "Oct 2021 - Jan 2024",
