@@ -62,40 +62,35 @@ Structure:
 4. Real-world impact
 5. Conclusion with actionable takeaway
 
-Return ONLY valid JSON in this exact format:
+Return valid JSON in this exact format:
 {{
   "title": "Article title here",
   "excerpt": "Compelling excerpt here",
   "content": "# Introduction\\n\\nFull markdown content here...",
   "tags": ["Tag1", "Tag2", "Tag3"]
-}}
+}}"""
 
-Do not include any text before or after the JSON."""
-
+    # Use JSON mode for better reliability
     response = client.models.generate_content(
         model='gemini-2.5-flash',
-        contents=prompt
+        contents=prompt,
+        config={
+            'response_mime_type': 'application/json',
+        }
     )
     
-    # Extract JSON from response
     text = response.text.strip()
     
-    # Remove markdown code blocks if present
-    if text.startswith('```json'):
-        text = text[7:]
-    if text.startswith('```'):
-        text = text[3:]
-    if text.endswith('```'):
-        text = text[:-3]
-    
-    text = text.strip()
-    
     try:
-        article = json.loads(text)
+        # Use strict=False to handle potential control characters (like literal tabs) 
+        # that might be present in the markdown content string
+        article = json.loads(text, strict=False)
         return article
     except json.JSONDecodeError as e:
         print(f"Failed to parse JSON: {e}")
-        print(f"Response text: {text[:500]}")
+        # Log the full response for debugging (truncated for brevity in standard output)
+        print(f"Response text start: {text[:500]}...")
+        print(f"Response text end: ...{text[-500:]}")
         raise
 
 def publish_article(article: dict) -> dict:
