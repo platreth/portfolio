@@ -4,6 +4,7 @@ import { ContactForm } from "@/components/ui/Contact";
 import { AboutMe } from "@/components/sections/AboutMe";
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from "next-intl";
+import { getAllPosts } from "@/lib/blog";
 
 export default function Home() {
   const tHero = useTranslations('Hero');
@@ -351,14 +352,14 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "Why MCP is the Future of E-commerce", tag: "Architecture", slug: "why-mcp-is-future" },
-              { title: "Migrating Legacy PHP to AI-Ready Infrastructure", tag: "Tech Debt", slug: "migrating-legacy-php" },
-              { title: "Local AI vs. OpenAI for Dutch Businesses", tag: "Privacy", slug: "local-ai-vs-openai" }
-            ].map((post, i) => (
+            {getAllPosts().slice(0, 3).map((post, i) => (
               <Link key={i} href={`/blog/${post.slug}`} className="group block glass-card p-6 rounded-xl hover:-translate-y-1 hover:shadow-lg transition-all border-stone-200 dark:border-white/5 hover:border-brand-500/30">
-                <span className="text-xs font-bold text-brand-700 dark:text-brand-500 tracking-wider uppercase mb-3 block font-mono">{post.tag}</span>
-                <h3 className="text-xl font-bold text-zinc-900 dark:text-white group-hover:text-brand-700 dark:group-hover:text-brand-300 transition-colors mb-4">{post.title}</h3>
+                <span className="text-xs font-bold text-brand-700 dark:text-brand-500 tracking-wider uppercase mb-3 block font-mono">
+                  {post.tags?.[0] || 'Article'}
+                </span>
+                <h3 className="text-xl font-bold text-zinc-900 dark:text-white group-hover:text-brand-700 dark:group-hover:text-brand-300 transition-colors mb-4 line-clamp-2">
+                  {post.title}
+                </h3>
                 <div className="flex items-center text-sm text-zinc-500 dark:text-slate-500 group-hover:text-zinc-800 dark:group-hover:text-slate-300 transition-colors">
                   <span>{tHub('readArticle')}</span>
                 </div>
