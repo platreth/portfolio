@@ -5,7 +5,7 @@ export const SITE_CONFIG = {
   name: 'Zaamsflow',
   title: 'Senior PHP Developer & AI Solutions Consultant',
   description: 'Building high-performance, AI-ready web solutions. Specializing in PHP optimization and Agentic AI implementation in Utrecht.',
-  url: 'http://zaamsflow.com',
+  url: 'https://www.zaamsflow.com',
   location: 'Utrecht, Netherlands',
 };
 
