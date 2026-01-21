@@ -95,8 +95,9 @@ IMPORTANT: Ensure all double quotes and backslashes in your Markdown content are
 
 def save_article(article: dict) -> str:
     """Save the generated article directly to the content/blog directory"""
+    import re
     # Generate slug from title
-    slug = article['title'].lower().replace(/[^a-z0-9]+/g, '-').strip('-')
+    slug = re.sub(r'[^a-z0-9]+', '-', article['title'].lower()).strip('-')
     
     # Create the frontmatter and content
     today = datetime.now().strftime('%Y-%m-%d')
