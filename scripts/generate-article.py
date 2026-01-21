@@ -93,25 +93,44 @@ IMPORTANT: Ensure all double quotes and backslashes in your Markdown content are
             import time
             time.sleep(2)
 
-def publish_article(article: dict) -> dict:
-    """Publish article via API"""
+def save_article(article: dict) -> str:
+    """Save the generated article directly to the content/blog directory"""
+    # Generate slug from title
+    slug = article['title'].lower().replace(/[^a-z0-9]+/g, '-').strip('-')
     
-    if not BLOG_API_KEY:
-        raise ValueError("BLOG_PUBLISH_API_KEY not set")
+    # Create the frontmatter and content
+    today = datetime.now().strftime('%Y-%m-%d')
+    tags_formatted = json.dumps(article.get('tags', []))
     
-    payload = {
-        **article,
-        'apiKey': BLOG_API_KEY
-    }
+    mdx_content = f"""---
+title: "{article['title']}"
+date: "{today}"
+excerpt: "{article['excerpt']}"
+tags: {tags_formatted}
+readTime: "5 min"
+---
+
+{article['content']}
+"""
+
+    # Determine the path
+    # When running in GitHub Actions or local repo root
+    base_path = os.getcwd()
+    blog_dir = os.path.join(base_path, 'content', 'blog')
     
-    response = requests.post(BLOG_API_URL, json=payload)
-    response.raise_for_status()
+    # Ensure directory exists
+    os.makedirs(blog_dir, exist_ok=True)
     
-    return response.json()
+    file_path = os.path.join(blog_dir, f"{slug}.mdx")
+    
+    # Write the file
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(mdx_content)
+    
+    return slug
 
 def main():
     """Main execution"""
-    
     # Select topic (rotate through list based on day of year)
     day_of_year = datetime.now().timetuple().tm_yday
     topic = TOPICS[day_of_year % len(TOPICS)]
@@ -122,13 +141,11 @@ def main():
         # Generate article
         article = generate_article(topic)
         print(f"✅ Generated: {article['title']}")
-        print(f"   Tags: {', '.join(article['tags'])}")
-        print(f"   Length: {len(article['content'])} characters")
         
-        # Publish article
-        result = publish_article(article)
-        print(f"🚀 Published: {result['url']}")
-        print(f"   Slug: {result['slug']}")
+        # Save directly to filesystem
+        slug = save_article(article)
+        print(f"🚀 Saved locally: content/blog/{slug}.mdx")
+        print("   GitHub Action will now commit this file.")
         
         return 0
         
