@@ -1,0 +1,111 @@
+{
+    "Navbar": {
+        "home": "Accueil",
+        "caseStudies": "Études de Cas",
+        "blog": "Blog",
+        "contact": "Contact",
+        "letsTalk": "Discutons"
+    },
+    "Hero": {
+        "available": "Disponible pour projets 2026 • Utrecht 🇳🇱",
+        "titlePrefix": "Je Construis des",
+        "titleSuffix": "Solutions AI Autonomes",
+        "description": "Ingénieur Senior (7 ans+) aidant les organisations à déployer des <highlight>workflows agentiques</highlight> fiables. Du concept au code en production.",
+        "ctaStrategy": "Réserver un Appel Stratégique",
+        "ctaCases": "Voir les Études de Cas"
+    },
+    "About": {
+        "titlePrefix": "Pourquoi engager un",
+        "titleSuffix": "Consultant IA ?",
+        "intro": "N'engagez pas un chercheur en IA isolé. Engagez un constructeur qui connaît la base de données, l'API, <em>et</em> le LLM.",
+        "bridgeTitle": "Le Pont 🌉",
+        "bridgeDesc": "Je comble le fossé entre <strong>l'Ingénierie Legacy</strong> fiable (PHP/Shopify) et <strong>l'IA Moderne</strong>. Je n'écris pas juste des prompts ; je construis les pipelines qui rendent l'IA sûre pour le business.",
+        "stability": "J'apporte la stabilité backend au chaos de l'IA générative. Je garantis que vos fonctionnalités IA sont <strong>sécurisées, évolutives et maintenables</strong>."
+    },
+    "Services": {
+        "title": "Solutions IA",
+        "subtitle": "Pour E-commerce",
+        "description": "J'aide les propriétaires de boutiques à Utrecht à passer du \"travail manuel\" à la \"croissance autonome\" avec ces trois produits de base.",
+        "auditTitle": "Audits de Maturité IA",
+        "auditDesc": "J'analyse vos workflows et données actuels pour trouver des opportunités d'automatisation à fort ROI. Vous obtenez une feuille de route, pas juste du code.",
+        "mcpTitle": "Serveurs MCP Privés",
+        "mcpDesc": "Ponts de données sécurisés conformes au Model Context Protocol. Laissez votre IA \"voir\" vos données PHP/SQL sur mesure en toute sécurité.",
+        "agentTitle": "Agents Travailleurs Autonomes",
+        "agentDesc": "Employés numériques construits en Python/LangGraph qui gèrent les retours, les tickets de support et la prospection pendant que vous dormez.",
+        "available": "Disponible"
+    },
+    "Experience": {
+        "title": "Parcours",
+        "titleSuffix": "Professionnel",
+        "zoomflowTitle": "Développeur Full-Stack Senior",
+        "zoomflowRole": "Zoomflow (Freelance)",
+        "zoomflowDate": "Sep 2023 - Présent",
+        "zoomflowDesc": "Livraison d'applications web évolutives. Spécialisation en stacks PHP modernisées et intégration IA. Construction de systèmes <em>fiables</em>.",
+        "rentmanTitle": "Développeur Back-end & Scrum Master",
+        "rentmanRole": "Rentman",
+        "rentmanDate": "Fév 2023 - Sep 2023",
+        "rentmanDesc": "Direction du développement backend et des processus Scrum. Implémentation DDD et améliorations des systèmes legacy.",
+        "tikanicaTitle": "Développeur Analyste",
+        "tikanicaRole": "Tikanica",
+        "tikanicaDate": "Oct 2021 - Jan 2024",
+        "tikanicaDesc": "Développement spécialisé haute performance. Gestion infrastructure Docker/Kubernetes et applications Symfony complexes."
+    },
+    "CaseStudies": {
+        "title": "AI",
+        "titleSuffix": "Playground",
+        "automatingReturns": "Automatisation des Retours",
+        "automatingReturnsDesc": "Réduction de 60% de la charge du service client grâce à un agent de classification intelligent intégré à Laravel.",
+        "automatingReturnsTag": "Automatisation E-commerce",
+        "readCaseStudy": "Lire l'Étude de Cas",
+        "legacyMigration": "Zend vers Laravel AI-Ready",
+        "legacyMigrationDesc": "Refonte d'une base de code de 10 ans pour définir des limites contextuelles claires pour l'intégration future de LLM.",
+        "legacyMigrationTag": "Migration Legacy",
+        "searchVisibilityTitle": "Mise à Jour Visibilité Recherche",
+        "searchVisibilityDesc": "Stratégie SEO Programmatique",
+        "internalTools": "Le Panneau Admin \"Agentique\"",
+        "internalToolsDesc": "Tableau de bord sur mesure où le personnel délègue des tâches à des collègues IA. Construit avec Next.js & Supabase.",
+        "internalToolsTag": "Outils Internes",
+        "exploreArchitecture": "Explorer l'Architecture"
+    },
+    "Contact": {
+        "titlePrefix": "Construisons quelque chose",
+        "titleSuffix": "d'Intelligent",
+        "description": "Prêt à moderniser votre infrastructure ? Réservez un appel de découverte gratuit de 15 minutes.",
+        "form": {
+            "name": "Nom",
+            "email": "Email",
+            "inquiryType": "Type de Demande",
+            "typeConsultation": "Consultation IA",
+            "typeDevelopment": "Développement PHP",
+            "typeLegacy": "Migration Legacy",
+            "typeOther": "Autre",
+            "message": "Message",
+            "placeholderName": "Jean Dupont",
+            "placeholderEmail": "jean@entreprise.fr",
+            "placeholderMessage": "Parlez-moi de votre projet...",
+            "submit": "Envoyer Message",
+            "sending": "Envoi...",
+            "successTitle": "Message Envoyé !",
+            "successDesc": "Merci de m'avoir contacté. Je reviendrai vers vous sous 24h.",
+            "sendAnother": "Envoyer un autre message"
+        }
+    },
+    "AboutMe": {
+        "title": "Au-delà du Code",
+        "intro": "Je suis Hugo, un développeur français qui a déménagé à Utrecht il y a 2 ans. Bien que je construise des systèmes IA pour gagner ma vie, je crois que même dans un monde piloté par l'IA, la connexion humaine compte plus que jamais.",
+        "philosophy": "C'est pourquoi je préfère me rencontrer en personne quand c'est possible. Que ce soit autour d'un café à Utrecht ou lors d'un appel vidéo, je pense que les meilleures solutions viennent de vraies conversations, pas seulement de messages Slack.",
+        "fact1": "Originaire de France 🇫🇷, maintenant chez moi à Utrecht",
+        "fact2": "Toujours partant pour un café et discuter d'IA, PHP, ou de la vie aux Pays-Bas",
+        "fact3": "Croyant en la tech centrée sur l'humain, même en construisant des systèmes autonomes"
+    },
+    "Hub": {
+        "title": "Centre de Ressources IA",
+        "description": "Réflexions sur l'intersection du PHP, du Business et de l'IA.",
+        "viewAll": "Voir Tous les Articles",
+        "readArticle": "Lire l'Article"
+    },
+    "Footer": {
+        "verified": "Développeur Agentique Vérifié",
+        "rights": "Spécialisé en PHP & Agentic AI."
+    }
+}

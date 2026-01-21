@@ -1,26 +1,143 @@
 @import "tailwindcss";
+@config "../tailwind.config.ts";
+@plugin "@tailwindcss/typography";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Brand Palette - Indigo */
+  --color-brand-50: #EEF2FF;
+  --color-brand-100: #E0E7FF;
+  --color-brand-200: #C7D2FE;
+  --color-brand-300: #A5B4FC;
+  --color-brand-400: #818CF8;
+  --color-brand-500: #6366F1;
+  --color-brand-600: #4F46E5;
+  --color-brand-700: #4338CA;
+  --color-brand-800: #3730A3;
+  --color-brand-900: #312E81;
+  --color-brand-950: #1E1B4B;
+
+  /* Accent Palette - Cyan */
+  --color-accent-400: #22D3EE;
+  --color-accent-500: #06B6D4;
+
+  --font-heading: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+
+  --animate-glow: glow 4s ease-in-out infinite alternate;
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px -5px var(--color-brand-500);
+    }
+
+    to {
+      box-shadow: 0 0 20px 5px var(--color-brand-500);
+    }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  /* Clean Light Theme (Default) */
+  --background: #FAFAFA;
+  /* Zinc 50 */
+  --foreground: #09090B;
+  /* Zinc 950 */
+
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(0, 0, 0, 0.1);
+  --card-hover-border: rgba(99, 102, 241, 0.5);
+}
+
+[data-theme="dark"],
+.dark {
+  /* Deep Space Theme */
+  --background: #0B0B10;
+  --foreground: #F8FAFC;
+
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-hover-border: rgba(99, 102, 241, 0.4);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* Glassmorphism Utilities */
+.glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--card-hover-border);
+  box-shadow: 0 10px 40px -10px rgba(99, 102, 241, 0.08);
+  /* Updated shadow for light mode */
+  transform: translateY(-2px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .glass-card:hover {
+    box-shadow: 0 0 30px -10px rgba(99, 102, 241, 0.15);
+  }
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Typography Plugin Overrides */
+.prose {
+  --tw-prose-body: #52525B;
+  /* Zinc 600 */
+  --tw-prose-headings: #18181B;
+  /* Zinc 900 */
+  --tw-prose-links: #4F46E5;
+  --tw-prose-bold: #18181B;
+  --tw-prose-counters: #4F46E5;
+  --tw-prose-bullets: #4F46E5;
+  --tw-prose-hr: #E4E4E7;
+  --tw-prose-quotes: #18181B;
+  --tw-prose-quote-borders: #4F46E5;
+  --tw-prose-captions: #71717A;
+  --tw-prose-code: #18181B;
+  --tw-prose-pre-code: #E2E8F0;
+  --tw-prose-pre-bg: #1E1B4B;
+}
+
+.dark .prose {
+  --tw-prose-body: #94A3B8;
+  --tw-prose-headings: #F8FAFC;
+  --tw-prose-links: #818CF8;
+  --tw-prose-bold: #F8FAFC;
+  --tw-prose-counters: #818CF8;
+  --tw-prose-bullets: #4F46E5;
+  --tw-prose-hr: #1E293B;
+  --tw-prose-quotes: #F8FAFC;
+  --tw-prose-quote-borders: #4F46E5;
+  --tw-prose-captions: #94A3B8;
+  --tw-prose-code: #F8FAFC;
+  --tw-prose-pre-code: #E2E8F0;
+  --tw-prose-pre-bg: #1E1B4B;
 }

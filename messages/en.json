@@ -1,0 +1,111 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "caseStudies": "Case Studies",
+        "blog": "Blog",
+        "contact": "Contact",
+        "letsTalk": "Let's Talk"
+    },
+    "Hero": {
+        "available": "Available for 2026 Projects • Utrecht 🇳🇱",
+        "titlePrefix": "I Build Autonomous",
+        "titleSuffix": "AI Workforce Solutions",
+        "description": "Senior Engineer (7y+) helping organizations deploy reliable <highlight>agentic workflows</highlight>. From concept to production code.",
+        "ctaStrategy": "Book Strategy Call (Utrecht/Remote)",
+        "ctaCases": "View Case Studies"
+    },
+    "About": {
+        "titlePrefix": "Why Hire an",
+        "titleSuffix": "AI consultant?",
+        "intro": "Don't hire a siloed AI researcher. Hire a builder who knows the database, the API, <em>and</em> the LLM.",
+        "bridgeTitle": "The Bridge 🌉",
+        "bridgeDesc": "I bridge the gap between reliable <strong>Legacy Engineering</strong> (PHP/Shopify) and <strong>Modern AI</strong>. I don't just write prompts; I build the pipelines that make AI safe for business.",
+        "stability": "I bring backend stability to the chaos of generative AI. I ensure your AI features are <strong>secure, scalable, and maintainable</strong>."
+    },
+    "Services": {
+        "title": "AI Solutions",
+        "subtitle": "For E-commerce",
+        "description": "I help webshop owners in Utrecht move from \"manual work\" to \"autonomous growth\" with these three core products.",
+        "auditTitle": "AI Readiness Audits",
+        "auditDesc": "I analyze your current workflows and data to find high-ROI automation opportunities. You get a roadmap, not just code.",
+        "mcpTitle": "Private MCP Servers",
+        "mcpDesc": "Secure data bridges matching the Model Context Protocol. Let your AI \"see\" your bespoke PHP/SQL data securely.",
+        "agentTitle": "Autonomous Worker Agents",
+        "agentDesc": "Digital employees built in Python/LangGraph that handle returns, support tickets, and outreach while you sleep.",
+        "available": "Available"
+    },
+    "Experience": {
+        "title": "Professional",
+        "titleSuffix": "Journey",
+        "zoomflowTitle": "Senior Full-Stack Developer",
+        "zoomflowRole": "Zoomflow (Freelance)",
+        "zoomflowDate": "Sep 2023 - Present",
+        "zoomflowDesc": "Delivering scalable web applications for businesses. Specializing in modernized PHP stacks and AI integration. Building <em>reliable</em> systems that drive growth.",
+        "rentmanTitle": "Back-end Developer & Scrum Master",
+        "rentmanRole": "Rentman",
+        "rentmanDate": "Feb 2023 - Sep 2023",
+        "rentmanDesc": "Led backend development and Scrum processes. Domain-Driven Design (DDD) implementation and legacy system improvements.",
+        "tikanicaTitle": "Analyst Developer",
+        "tikanicaRole": "Tikanica",
+        "tikanicaDate": "Oct 2021 - Jan 2024",
+        "tikanicaDesc": "High-performance specialized development. Managed Docker/Kubernetes infrastructure and complex Symfony applications."
+    },
+    "CaseStudies": {
+        "title": "AI",
+        "titleSuffix": "Playground",
+        "automatingReturns": "Automating Returns with Agents",
+        "automatingReturnsDesc": "Reduced customer service load by 60% by implementing a smart classification agent directly within a Laravel webshop.",
+        "automatingReturnsTag": "E-commerce Automation",
+        "readCaseStudy": "Read Case Study",
+        "legacyMigration": "Zend to AI-Ready Laravel",
+        "legacyMigrationDesc": "Refactoring a 10-year old codebase to define clear context boundaries for future LLM integration.",
+        "legacyMigrationTag": "Legacy Migration",
+        "searchVisibilityTitle": "Search Visibility Update",
+        "searchVisibilityDesc": "Programmatic SEO Strategy",
+        "internalTools": "The \"Agentic\" Admin Panel",
+        "internalToolsDesc": "Building a custom dashboard where Staff can delegate tasks to AI colleagues. Built with Next.js & Supabase.",
+        "internalToolsTag": "Internal Tools",
+        "exploreArchitecture": "Explore Architecture"
+    },
+    "Contact": {
+        "titlePrefix": "Let's Build Something",
+        "titleSuffix": "Intelligent",
+        "description": "Ready to modernize your infrastructure? Schedule a free 15-minute discovery call to discuss your architecture.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "inquiryType": "Inquiry Type",
+            "typeConsultation": "AI Consultation",
+            "typeDevelopment": "PHP Development",
+            "typeLegacy": "Legacy Migration",
+            "typeOther": "Other",
+            "message": "Message",
+            "placeholderName": "John Doe",
+            "placeholderEmail": "john@company.com",
+            "placeholderMessage": "Tell me about your project...",
+            "submit": "Send Message",
+            "sending": "Sending...",
+            "successTitle": "Message Sent!",
+            "successDesc": "Thanks for reaching out. I'll get back to you within 24 hours.",
+            "sendAnother": "Send another message"
+        }
+    },
+    "AboutMe": {
+        "title": "Beyond the Code",
+        "intro": "I'm Hugo, a French developer who moved to Utrecht 2 years ago. While I build AI systems for a living, I believe that even in an AI-driven world, human connection matters more than ever.",
+        "philosophy": "That's why I prefer meeting in person whenever possible. Whether it's grabbing coffee in Utrecht or a video call, I think the best solutions come from real conversations, not just Slack messages.",
+        "fact1": "Originally from France 🇫🇷, now calling Utrecht home",
+        "fact2": "Always up for a coffee chat about AI, PHP, or life in the Netherlands",
+        "fact3": "Believer in human-first tech, even when building autonomous systems"
+    },
+    "Hub": {
+        "title": "AI Readiness Hub",
+        "description": "Thoughts on the intersection of PHP, Business, and AI.",
+        "viewAll": "View All Articles",
+        "readArticle": "Read Article"
+    },
+    "Footer": {
+        "verified": "Verified Agentic Developer",
+        "rights": "Specialized in PHP & Agentic AI."
+    }
+}

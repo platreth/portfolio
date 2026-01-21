@@ -1,0 +1,111 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "caseStudies": "Casestudies",
+        "blog": "Blog",
+        "contact": "Contact",
+        "letsTalk": "Laten we praten"
+    },
+    "Hero": {
+        "available": "Beschikbaar voor projecten in 2026 • Utrecht 🇳🇱",
+        "titlePrefix": "Ik Bouw Autonome",
+        "titleSuffix": "AI Workforce Oplossingen",
+        "description": "Senior Engineer (7j+) helpt organisaties betrouwbare <highlight>agentic workflows</highlight> in te zetten. Van concept tot productiecode.",
+        "ctaStrategy": "Boek Strategiegesprek (Utrecht/Remote)",
+        "ctaCases": "Bekijk Casestudies"
+    },
+    "About": {
+        "titlePrefix": "Waarom een",
+        "titleSuffix": "AI-consultant inhuren?",
+        "intro": "Huur geen gesilo-de AI-onderzoeker in. Huur een bouwer die de database, de API, <em>én</em> het LLM kent.",
+        "bridgeTitle": "De Brug 🌉",
+        "bridgeDesc": "Ik overbrug de kloof tussen betrouwbare <strong>Legacy Engineering</strong> (PHP/Shopify) en <strong>Moderne AI</strong>. Ik schrijf niet alleen prompts; ik bouw de pijplijnen die AI veilig maken voor bedrijven.",
+        "stability": "Ik breng backend-stabiliteit in de chaos van generatieve AI. Ik zorg ervoor dat uw AI-functies <strong>veilig, schaalbaar en onderhoudbaar</strong> zijn."
+    },
+    "Services": {
+        "title": "AI Oplossingen",
+        "subtitle": "Voor E-commerce",
+        "description": "Ik help webshop-eigenaren in Utrecht van \"handwerk\" naar \"autonrome groei\" met deze drie kernproducten.",
+        "auditTitle": "AI Readiness Audits",
+        "auditDesc": "Ik analyseer uw huidige workflows en data om high-ROI automatiseringskansen te vinden. U krijgt een roadmap, niet alleen code.",
+        "mcpTitle": "Private MCP Servers",
+        "mcpDesc": "Veilige data-bruggen die voldoen aan het Model Context Protocol. Laat uw AI uw specifieke PHP/SQL-data veilig \"zien\".",
+        "agentTitle": "Autonome Werknemer Agents",
+        "agentDesc": "Digitale werknemers gebouwd in Python/LangGraph die retouren, supporttickets en outreach afhandelen terwijl u slaapt.",
+        "available": "Beschikbaar"
+    },
+    "Experience": {
+        "title": "Professionele",
+        "titleSuffix": "Reis",
+        "zoomflowTitle": "Senior Full-Stack Developer",
+        "zoomflowRole": "Zoomflow (Freelance)",
+        "zoomflowDate": "Sep 2023 - Heden",
+        "zoomflowDesc": "Leveren van schaalbare webapplicaties. Gespecialiseerd in gemoderniseerde PHP-stacks en AI-integratie. <em>Betrouwbare</em> systemen bouwen die groei stimuleren.",
+        "rentmanTitle": "Back-end Developer & Scrum Master",
+        "rentmanRole": "Rentman",
+        "rentmanDate": "Feb 2023 - Sep 2023",
+        "rentmanDesc": "Leiding backend development en Scrum processen. DDD-implementatie en verbeteringen aan legacy systemen.",
+        "tikanicaTitle": "Analist Developer",
+        "tikanicaRole": "Tikanica",
+        "tikanicaDate": "Okt 2021 - Jan 2024",
+        "tikanicaDesc": "High-performance gespecialiseerde ontwikkeling. Beheer van Docker/Kubernetes infrastructuur en complexe Symfony applicaties."
+    },
+    "CaseStudies": {
+        "title": "AI",
+        "titleSuffix": "Playground",
+        "automatingReturns": "Retouren Automatiseren met Agents",
+        "automatingReturnsDesc": "Klantenservice-belasting met 60% verminderd door een slimme classificatie-agent te implementeren in een Laravel webshop.",
+        "automatingReturnsTag": "E-commerce Automatisering",
+        "readCaseStudy": "Lees Casestudy",
+        "legacyMigration": "Zend naar AI-Klaar Laravel",
+        "legacyMigrationDesc": "Refactoring van een 10 jaar oude codebase om duidelijke contextgrenzen te definiëren voor toekomstige LLM-integratie.",
+        "legacyMigrationTag": "Legacy Migratie",
+        "searchVisibilityTitle": "Zoekzichtbaarheid Update",
+        "searchVisibilityDesc": "Programmatische SEO Strategie",
+        "internalTools": "Het \"Agentic\" Admin Paneel",
+        "internalToolsDesc": "Bouwen van een dashboard waar personeel taken kan delegeren aan AI-collega's. Gebouwd met Next.js & Supabase.",
+        "internalToolsTag": "Interne Tools",
+        "exploreArchitecture": "Verken Architectuur"
+    },
+    "Contact": {
+        "titlePrefix": "Laten we iets",
+        "titleSuffix": "Intelligents bouwen",
+        "description": "Klaar om uw infrastructuur te moderniseren? Plan een gratis oriëntatiegesprek van 15 minuten.",
+        "form": {
+            "name": "Naam",
+            "email": "E-mail",
+            "inquiryType": "Type Aanvraag",
+            "typeConsultation": "AI Consultatie",
+            "typeDevelopment": "PHP Ontwikkeling",
+            "typeLegacy": "Legacy Migratie",
+            "typeOther": "Overig",
+            "message": "Bericht",
+            "placeholderName": "Jan Jansen",
+            "placeholderEmail": "jan@bedrijf.nl",
+            "placeholderMessage": "Vertel me over uw project...",
+            "submit": "Verstuur Bericht",
+            "sending": "Versturen...",
+            "successTitle": "Bericht Verzonden!",
+            "successDesc": "Bedankt voor uw bericht. Ik neem binnen 24 uur contact met u op.",
+            "sendAnother": "Stuur nog een bericht"
+        }
+    },
+    "AboutMe": {
+        "title": "Meer dan Code",
+        "intro": "Ik ben Hugo, een Franse ontwikkelaar die 2 jaar geleden naar Utrecht verhuisde. Hoewel ik AI-systemen bouw voor mijn werk, geloof ik dat menselijke verbinding belangrijker is dan ooit, zelfs in een AI-gedreven wereld.",
+        "philosophy": "Daarom ontmoet ik graag persoonlijk wanneer mogelijk. Of het nu koffie drinken in Utrecht is of een videogesprek, ik denk dat de beste oplossingen voortkomen uit echte gesprekken, niet alleen Slack-berichten.",
+        "fact1": "Oorspronkelijk uit Frankrijk 🇫🇷, nu thuis in Utrecht",
+        "fact2": "Altijd in voor een koffiegesprek over AI, PHP, of het leven in Nederland",
+        "fact3": "Geloof in mensgerichte technologie, zelfs bij het bouwen van autonome systemen"
+    },
+    "Hub": {
+        "title": "AI Kennis Hub",
+        "description": "Gedachten over het snijvlak van PHP, Business en AI.",
+        "viewAll": "Bekijk Alle Artikelen",
+        "readArticle": "Lees Artikel"
+    },
+    "Footer": {
+        "verified": "Geverifieerd Agentic Developer",
+        "rights": "Gespecialiseerd in PHP & Agentic AI."
+    }
+}
