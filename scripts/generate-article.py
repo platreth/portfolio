@@ -34,8 +34,8 @@ TOPICS = [
     "Privacy-first AI for European businesses"
 ]
 
-def generate_article(topic: str) -> dict:
-    """Generate a blog article using Gemini AI"""
+def generate_article(topic: str, retries: int = 2) -> dict:
+    """Generate a blog article using Gemini AI with retry logic and schema validation"""
     
     if not GEMINI_API_KEY:
         raise ValueError("GOOGLE_GENERATIVE_AI_API_KEY not set")
@@ -49,49 +49,49 @@ Requirements:
 - Title: SEO-optimized, 50-70 characters, compelling
 - Excerpt: Hook that makes developers want to read, 120-160 characters
 - Content: 800-1200 words in Markdown format
-- Include practical code examples
+- Include practical code examples (PHP/TypeScript)
 - Target audience: Senior developers, CTOs, tech leads
 - Tone: Technical but approachable, confident, practical
-- Focus on real-world implementation, not theory
-- Include specific examples from e-commerce or SaaS contexts
+- Focus on real-world e-commerce or SaaS contexts
 
-Structure:
-1. Hook (problem statement)
-2. Context (why this matters)
-3. Solution (practical approach with code)
-4. Real-world impact
-5. Conclusion with actionable takeaway
+IMPORTANT: Ensure all double quotes and backslashes in your Markdown content are properly escaped for JSON.
+"""
 
-Return valid JSON in this exact format:
-{{
-  "title": "Article title here",
-  "excerpt": "Compelling excerpt here",
-  "content": "# Introduction\\n\\nFull markdown content here...",
-  "tags": ["Tag1", "Tag2", "Tag3"]
-}}"""
-
-    # Use JSON mode for better reliability
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=prompt,
-        config={
-            'response_mime_type': 'application/json',
-        }
-    )
-    
-    text = response.text.strip()
-    
-    try:
-        # Use strict=False to handle potential control characters (like literal tabs) 
-        # that might be present in the markdown content string
-        article = json.loads(text, strict=False)
-        return article
-    except json.JSONDecodeError as e:
-        print(f"Failed to parse JSON: {e}")
-        # Log the full response for debugging (truncated for brevity in standard output)
-        print(f"Response text start: {text[:500]}...")
-        print(f"Response text end: ...{text[-500:]}")
-        raise
+    for attempt in range(retries + 1):
+        try:
+            # Use JSON mode with a strict schema for maximum reliability
+            response = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt,
+                config={
+                    'response_mime_type': 'application/json',
+                    'response_schema': {
+                        'type': 'OBJECT',
+                        'properties': {
+                            'title': {'type': 'STRING'},
+                            'excerpt': {'type': 'STRING'},
+                            'content': {'type': 'STRING'},
+                            'tags': {'type': 'ARRAY', 'items': {'type': 'STRING'}}
+                        },
+                        'required': ['title', 'excerpt', 'content', 'tags']
+                    }
+                }
+            )
+            
+            text = response.text.strip()
+            # strict=False allows control characters like \n in the string content
+            article = json.loads(text, strict=False)
+            return article
+            
+        except (json.JSONDecodeError, Exception) as e:
+            if attempt == retries:
+                print(f"❌ Final attempt failed: {e}")
+                if 'text' in locals():
+                    print(f"Response text start: {text[:200]}...")
+                raise
+            print(f"⚠️ Attempt {attempt + 1} failed, retrying in 2s... Error: {e}")
+            import time
+            time.sleep(2)
 
 def publish_article(article: dict) -> dict:
     """Publish article via API"""
