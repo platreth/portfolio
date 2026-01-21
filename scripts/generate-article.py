@@ -8,7 +8,7 @@ import os
 import json
 import requests
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
 
 # Configuration
 GEMINI_API_KEY = os.environ.get('GOOGLE_GENERATIVE_AI_API_KEY')
@@ -40,8 +40,7 @@ def generate_article(topic: str) -> dict:
     if not GEMINI_API_KEY:
         raise ValueError("GOOGLE_GENERATIVE_AI_API_KEY not set")
     
-    genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-2.0-flash-exp')
+    client = genai.Client(api_key=GEMINI_API_KEY)
     
     prompt = f"""You are Hugo Platret, a senior full-stack developer specializing in AI and PHP.
 Write a technical blog post for zaamsflow.com about: {topic}
@@ -73,7 +72,10 @@ Return ONLY valid JSON in this exact format:
 
 Do not include any text before or after the JSON."""
 
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(
+        model='gemini-2.0-flash-exp',
+        contents=prompt
+    )
     
     # Extract JSON from response
     text = response.text.strip()
