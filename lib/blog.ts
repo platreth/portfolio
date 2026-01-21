@@ -75,8 +75,18 @@ export function getPostBySlug(slug: string): BlogPost | null {
 }
 
 export function getPostSlugs(): string[] {
-    const fileNames = fs.readdirSync(postsDirectory);
-    return fileNames
-        .filter(fileName => fileName.endsWith('.mdx'))
-        .map(fileName => fileName.replace(/\.mdx$/, ''));
+    if (!fs.existsSync(postsDirectory)) {
+        console.error(`Blog directory not found: ${postsDirectory}`);
+        return [];
+    }
+
+    try {
+        const fileNames = fs.readdirSync(postsDirectory);
+        return fileNames
+            .filter(fileName => fileName.endsWith('.mdx'))
+            .map(fileName => fileName.replace(/\.mdx$/, ''));
+    } catch (error) {
+        console.error('Error reading blog slugs:', error);
+        return [];
+    }
 }

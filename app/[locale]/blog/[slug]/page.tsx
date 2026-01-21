@@ -20,8 +20,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export async function generateStaticParams() {
     const slugs = getPostSlugs();
-    return slugs.map((slug) => ({ slug }));
+    const locales = ['en', 'nl', 'fr'];
+
+    // Generate params for all locale/slug combinations
+    const params = [];
+    for (const locale of locales) {
+        for (const slug of slugs) {
+            params.push({ locale, slug });
+        }
+    }
+
+    return params;
 }
+
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
