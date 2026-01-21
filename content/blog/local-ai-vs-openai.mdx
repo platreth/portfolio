@@ -1,0 +1,42 @@
+---
+title: "Local AI vs. OpenAI for Dutch Businesses"
+date: "2025-08-10"
+excerpt: "Privacy regulations (GDPR) often demand local inference. Benchmarking Llama 3 on consumer hardware vs GPT-4o."
+tags: ["Privacy", "Benchmarks"]
+readTime: "6 min"
+---
+
+GDPR compliance is the elephant in the room. Can you send customer PII to OpenAI? Often, the answer is "No".
+
+## Llama 3 on Consumer Hardware
+
+We benchmarked Llama 3 8B on a standard MacBook Pro M3 vs a hosted Azure endpoint. The results were surprising.
+
+For RAG tasks (Retrieval Augmented Generation), local models often outperform larger models because the *context* is more important than the *reasoning* power for simple lookup tasks.
+
+## The Privacy Advantage
+
+Running AI locally means:
+- **No data leaves your infrastructure**
+- **GDPR compliance by default**
+- **No per-token costs**
+- **Predictable latency**
+
+## When to Use What
+
+**Use OpenAI/Claude when:**
+- You need cutting-edge reasoning
+- Data privacy isn't a concern
+- You're prototyping quickly
+
+**Use Local AI when:**
+- Handling customer PII
+- Operating in regulated industries
+- Need predictable costs
+- Want full control
+
+## The Dutch Context
+
+For businesses in the Netherlands, GDPR isn't optional. Local AI isn't just a nice-to-have—it's often a **requirement**.
+
+The good news? Models like Llama 3 are getting good enough for most business use cases, especially when combined with RAG.

@@ -1,5 +1,8 @@
 import { MetadataRoute } from 'next';
 import { SITE_CONFIG } from '@/utils/seo-metadata';
+import { getPostSlugs } from '@/lib/blog';
+import fs from 'fs';
+import path from 'path';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = SITE_CONFIG.url;
@@ -15,17 +18,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: route === '' ? 1 : 0.8,
     }));
 
-    // Blog Posts
-    const blogPosts = [
-        'why-mcp-is-future',
-        'migrating-legacy-php',
-        'local-ai-vs-openai',
-    ].map((slug) => ({
-        url: `${baseUrl}/blog/${slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.6,
-    }));
+    // Blog Posts (Dynamic from filesystem)
+    const blogSlugs = getPostSlugs();
+    const blogPosts = blogSlugs.map((slug) => {
+        const filePath = path.join(process.cwd(), 'content/blog', `${slug}.mdx`);
+        const stats = fs.statSync(filePath);
+
+        return {
+            url: `${baseUrl}/blog/${slug}`,
+            lastModified: stats.mtime,
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+        };
+    });
 
     // Case Studies (New)
     const caseStudies = [

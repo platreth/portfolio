@@ -3,90 +3,29 @@ import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { getPostBySlug, getPostSlugs } from '@/lib/blog';
 
-// In a real app, you'd fetch this from a file system or CMS
-const POSTS: Record<string, { title: string; date: string; content: string; tags: string[] }> = {
-    'why-mcp-is-future': {
-        title: 'Why the Model Context Protocol (MCP) is the Future of E-commerce',
-        date: '2025-10-15',
-        tags: ['Architecture', 'Agents'],
-        content: `
-The Model Context Protocol (MCP) is revolutionizing how we connect LLMs to existing data sources. instead of building custom brittle integrations, we can now expose data safely.
 
-## The Problem with Legacy API Integration
-
-Most e-commerce stores run on legacy PHP monoliths (Magento, custom layouts). Building an AI agent that "knows" your inventory usually involves:
-1.  Scraping the site (brittle)
-2.  Building a custom API just for the AI (expensive)
-3.  dumping SQL into a vector DB (stale data)
-
-## Enter MCP
-
-MCP provides a standardized way to expose resources (files, database rows) and tools (functions) to an LLM.
-
-\`\`\`typescript
-const server = new McpServer({
-  name: "Magento-Adapter",
-  version: "1.0.0"
-});
-\`\`\`
-
-By wrapping your legacy logic in an MCP server, you create a "universal adapter" that any AI client (Claude, Cursor, custom agents) can talk to.
-    `,
-    },
-    'migrating-legacy-php': {
-        title: 'Migrating Legacy PHP to AI-Ready Infrastructure',
-        date: '2025-09-22',
-        tags: ['Tech Debt', 'PHP'],
-        content: `
-Refactoring legacy PHP is no longer just about stability—it's about preparing for the Agentic future.
-
-## Defining Context Boundaries
-
-LLMs suffer from limited context windows. If you feed a 10,000 line "God Class" controller to an agent, it will hallucinate.
-The first step in migration is **Vertical Slicing**.
-
-## The Strangler Fig Pattern
-
-Don't rewrite. Replace.
-1.  Identify a seam (e.g., Shipping Calculation)
-2.  Write a new microservice or module in a modern framework (Next.js/Laravel)
-3.  Route traffic to the new service for that specific context.
-    `,
-    },
-    'local-ai-vs-openai': {
-        title: 'Local AI vs. OpenAI for Dutch Businesses',
-        date: '2025-08-10',
-        tags: ['Privacy', 'Benchmarks'],
-        content: `
-GDPR compliance is the elephant in the room. Can you send customer PII to OpenAI? Often, the answer is "No".
-
-## Llama 3 on Consumer Hardware
-
-We benchmarked Llama 3 8B on a standard MacBook Pro M3 vs a hosted Azure endpoint. The results were surprising.
-For RAG tasks (Retrieval Augmented Generation), local models often outperform larger models because the *context* is more important than the *reasoning* power for simple lookup tasks.
-    `,
-    },
-};
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;
-    const post = POSTS[slug];
+    const post = getPostBySlug(slug);
     if (!post) return { title: 'Post Not Found' };
 
     return {
         title: `${post.title} | Zaamsflow`,
-        description: `Read about ${post.title} and other insights on AI Engineering.`,
+        description: post.excerpt,
     };
 }
 
 export async function generateStaticParams() {
-    return Object.keys(POSTS).map((slug) => ({ slug }));
+    const slugs = getPostSlugs();
+    return slugs.map((slug) => ({ slug }));
 }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
-    const post = POSTS[slug];
+    const post = getPostBySlug(slug);
 
     if (!post) {
         notFound();

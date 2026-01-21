@@ -1,0 +1,39 @@
+---
+title: "Migrating Legacy PHP to AI-Ready Infrastructure"
+date: "2025-09-22"
+excerpt: "A practical guide to refactoring Zend/Symfony 2 apps into modular API surfaces that LLMs can actually understand."
+tags: ["Tech Debt", "PHP"]
+readTime: "12 min"
+---
+
+Refactoring legacy PHP is no longer just about stability—it's about preparing for the Agentic future.
+
+## Defining Context Boundaries
+
+LLMs suffer from limited context windows. If you feed a 10,000 line "God Class" controller to an agent, it will hallucinate.
+
+The first step in migration is **Vertical Slicing**.
+
+## The Strangler Fig Pattern
+
+Don't rewrite. Replace.
+
+1. Identify a seam (e.g., Shipping Calculation)
+2. Write a new microservice or module in a modern framework (Next.js/Laravel)
+3. Route traffic to the new service for that specific context
+
+## Why This Matters for AI
+
+When you break down monoliths into clear boundaries, you're not just improving maintainability—you're creating **AI-friendly contexts**.
+
+Each module becomes a potential MCP server or API endpoint that an agent can understand and interact with safely.
+
+## Practical Steps
+
+Start small:
+- Pick one feature (e.g., product search)
+- Extract it into a standalone service
+- Document the API clearly
+- Test with an AI agent
+
+The goal isn't perfection—it's **progressive enhancement** toward an AI-ready architecture.

@@ -1,40 +1,16 @@
 import Link from 'next/link';
 import { ArrowRight, Calendar, Clock, Tag } from 'lucide-react';
 import { Metadata } from 'next';
+import { getAllPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
     title: 'AI Engineering Blog - Zaamsflow',
     description: 'Technical deep-dives into Agentic AI, PHP refactoring strategies, and building reliable systems.',
 };
 
-const POSTS = [
-    {
-        slug: 'why-mcp-is-future',
-        title: 'Why the Model Context Protocol (MCP) is the Future of E-commerce',
-        excerpt: 'How standardized context context protocols enable agents to safely interact with legacy databases without hallucinations.',
-        date: '2025-10-15',
-        readTime: '8 min read',
-        tags: ['Architecture', 'Agents'],
-    },
-    {
-        slug: 'migrating-legacy-php',
-        title: 'Migrating Legacy PHP to AI-Ready Infrastructure',
-        excerpt: 'A practical guide to refactoring Zend/Symfony 2 apps into modular API surfaces that LLMs can actually understand.',
-        date: '2025-09-22',
-        readTime: '12 min read',
-        tags: ['Tech Debt', 'PHP'],
-    },
-    {
-        slug: 'local-ai-vs-openai',
-        title: 'Local AI vs. OpenAI for Dutch Businesses',
-        excerpt: 'Privacy regulations (GDPR) often demand local inference. Benchmarking Llama 3 on consumer hardware vs GPT-4o.',
-        date: '2025-08-10',
-        readTime: '6 min read',
-        tags: ['Privacy', 'Benchmarks'],
-    },
-];
-
 export default function BlogIndex() {
+    const posts = getAllPosts();
+
     return (
         <div className="pt-32 pb-24 min-h-screen">
             <div className="container mx-auto px-4">
@@ -51,7 +27,7 @@ export default function BlogIndex() {
                 </header>
 
                 <div className="max-w-4xl mx-auto grid gap-8">
-                    {POSTS.map((post) => (
+                    {posts.map((post) => (
                         <article key={post.slug} className="glass-card p-8 rounded-2xl group border-stone-200 dark:border-white/5 hover:border-brand-500/30 dark:hover:border-brand-500/30 transition-all shadow-sm">
                             <div className="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center mb-4">
                                 <div className="flex flex-wrap gap-2">
