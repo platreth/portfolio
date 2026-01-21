@@ -347,7 +347,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold mb-2 text-zinc-900 dark:text-white">{tHub('title')}</h2>
               <p className="text-zinc-700 dark:text-slate-400">{tHub('description')}</p>
             </div>
-            <a href="/blog" className="text-brand-700 dark:text-brand-400 font-mono hover:text-brand-500 dark:hover:text-brand-300 transition-colors flex items-center gap-2">{tHub('viewAll')} <ArrowRight className="w-4 h-4" /></a>
+            <Link href="/blog" className="text-brand-700 dark:text-brand-400 font-mono hover:text-brand-500 dark:hover:text-brand-300 transition-colors flex items-center gap-2">{tHub('viewAll')} <ArrowRight className="w-4 h-4" /></Link>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
