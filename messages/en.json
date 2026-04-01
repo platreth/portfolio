@@ -31,14 +31,26 @@
         "statsLanguagesLabel": "Languages Spoken"
     },
     "Services": {
-        "title": "What I Do",
-        "description": "From AI integration to full-stack development, I deliver solutions tailored to your business goals.",
-        "aiTitle": "AI & Agentic Solutions",
-        "aiDesc": "Custom AI chatbots, agentic workflows with Claude/OpenAI, RAG pipelines, prompt engineering, and custom MCP servers that connect your AI to your data.",
-        "devTitle": "Full-Stack Development",
-        "devDesc": "Production web applications with Django, Symfony, Laravel, and WordPress. From single apps to scalable multi-site architectures.",
+        "title": "Services",
+        "description": "I help businesses leverage AI and modern web technologies to solve real problems. Here's what I can do for you.",
+        "devTitle": "Full-Stack Web Development",
+        "devDesc": "Custom web applications built with Django, Symfony, Laravel, or WordPress. From MVPs to complex platforms, I handle front-end, back-end, APIs, and deployment. Scalable architectures that grow with your business.",
+        "devTags": "Django, Symfony, Laravel, WordPress, React, Next.js",
+        "auditTitle": "AI Readiness Audit",
+        "auditDesc": "I analyze your existing workflows, data, and infrastructure to identify where AI can deliver real ROI. You get a clear roadmap with prioritized opportunities -- not a generic report.",
+        "auditTags": "Process Analysis, ROI Assessment, Strategic Roadmap",
+        "automationTitle": "Workflow Automation",
+        "automationDesc": "Automate repetitive tasks with intelligent agents. From data processing pipelines to email workflows, I build autonomous systems that handle the work while you focus on what matters.",
+        "automationTags": "Agentic Workflows, Process Automation, Data Pipelines",
+        "llmTitle": "Custom LLM Integration",
+        "llmDesc": "Integrate large language models into your existing systems. Fine-tuning, RAG pipelines, prompt engineering, and custom MCP servers that securely connect AI to your business data.",
+        "llmTags": "Claude API, OpenAI, RAG, Fine-Tuning, MCP Servers",
+        "chatbotTitle": "AI Chatbots",
+        "chatbotDesc": "Custom chatbots trained on your content that actually understand your business. Deployed on your website or internal tools, with accurate answers instead of generic AI responses.",
+        "chatbotTags": "Chatbase, Custom Training, Website Integration",
         "consultTitle": "AI-Assisted Development",
-        "consultDesc": "I use AI as a core part of how I engineer products. Claude Code, agentic workflows, and modern tooling to accelerate delivery without compromising quality."
+        "consultDesc": "I use AI as a core part of how I engineer products. Claude Code, agentic workflows, and modern tooling to ship faster without cutting corners. Available for pair-programming and team upskilling.",
+        "consultTags": "Claude Code, Agentic Dev, Team Training"
     },
     "Experience": {
         "title": "Experience",

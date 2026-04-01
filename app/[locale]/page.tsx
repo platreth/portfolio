@@ -1,5 +1,5 @@
 import { generateSoftwareSourceCodeSchema } from "@/utils/seo-metadata";
-import { ArrowRight, ArrowDown, Brain, Code, Cpu, Briefcase, MapPin, Zap, Truck, FileText, Microscope } from 'lucide-react';
+import { ArrowRight, ArrowDown, Brain, Code, Cpu, Briefcase, MapPin, Zap, Truck, FileText, Microscope, Search, Workflow, MessageSquare, Wrench } from 'lucide-react';
 import { ContactForm } from "@/components/ui/Contact";
 import { AboutMe } from "@/components/sections/AboutMe";
 import { Link } from '@/i18n/navigation';
@@ -97,30 +97,28 @@ export default function Home() {
             <p className="text-lg text-stone-600 dark:text-stone-400">{tServices('description')}</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="card rounded-xl p-8">
-              <div className="w-12 h-12 rounded-lg bg-brand-50 dark:bg-brand-950 flex items-center justify-center mb-5 text-brand-600 dark:text-brand-400">
-                <Brain className="w-6 h-6" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: Code, titleKey: 'devTitle', descKey: 'devDesc', tagsKey: 'devTags' },
+              { icon: Search, titleKey: 'auditTitle', descKey: 'auditDesc', tagsKey: 'auditTags' },
+              { icon: Workflow, titleKey: 'automationTitle', descKey: 'automationDesc', tagsKey: 'automationTags' },
+              { icon: Brain, titleKey: 'llmTitle', descKey: 'llmDesc', tagsKey: 'llmTags' },
+              { icon: MessageSquare, titleKey: 'chatbotTitle', descKey: 'chatbotDesc', tagsKey: 'chatbotTags' },
+              { icon: Zap, titleKey: 'consultTitle', descKey: 'consultDesc', tagsKey: 'consultTags' },
+            ].map((service, i) => (
+              <div key={i} className="card rounded-xl p-8 flex flex-col">
+                <div className="w-11 h-11 rounded-lg bg-brand-50 dark:bg-brand-950 flex items-center justify-center mb-5 text-brand-600 dark:text-brand-400">
+                  <service.icon className="w-5 h-5" />
+                </div>
+                <h3 className="text-lg font-bold text-stone-900 dark:text-stone-50 mb-2">{tServices(service.titleKey)}</h3>
+                <p className="text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-4 flex-1">{tServices(service.descKey)}</p>
+                <div className="flex flex-wrap gap-1.5 pt-2 border-t border-stone-100 dark:border-stone-800">
+                  {tServices(service.tagsKey).split(', ').map((tag) => (
+                    <span key={tag} className="text-xs px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-500 dark:text-stone-400">{tag}</span>
+                  ))}
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-stone-900 dark:text-stone-50 mb-3">{tServices('aiTitle')}</h3>
-              <p className="text-stone-600 dark:text-stone-400 leading-relaxed">{tServices('aiDesc')}</p>
-            </div>
-
-            <div className="card rounded-xl p-8">
-              <div className="w-12 h-12 rounded-lg bg-brand-50 dark:bg-brand-950 flex items-center justify-center mb-5 text-brand-600 dark:text-brand-400">
-                <Code className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold text-stone-900 dark:text-stone-50 mb-3">{tServices('devTitle')}</h3>
-              <p className="text-stone-600 dark:text-stone-400 leading-relaxed">{tServices('devDesc')}</p>
-            </div>
-
-            <div className="card rounded-xl p-8">
-              <div className="w-12 h-12 rounded-lg bg-brand-50 dark:bg-brand-950 flex items-center justify-center mb-5 text-brand-600 dark:text-brand-400">
-                <Zap className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold text-stone-900 dark:text-stone-50 mb-3">{tServices('consultTitle')}</h3>
-              <p className="text-stone-600 dark:text-stone-400 leading-relaxed">{tServices('consultDesc')}</p>
-            </div>
+            ))}
           </div>
         </div>
       </section>

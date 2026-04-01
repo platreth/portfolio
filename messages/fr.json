@@ -31,14 +31,26 @@
         "statsLanguagesLabel": "Langues Parlees"
     },
     "Services": {
-        "title": "Ce que je fais",
-        "description": "De l'integration IA au developpement full-stack, je livre des solutions adaptees a vos objectifs business.",
-        "aiTitle": "Solutions IA & Agentiques",
-        "aiDesc": "Chatbots IA sur mesure, workflows agentiques avec Claude/OpenAI, pipelines RAG, prompt engineering et serveurs MCP custom pour connecter votre IA a vos donnees.",
-        "devTitle": "Developpement Full-Stack",
-        "devDesc": "Applications web de production avec Django, Symfony, Laravel et WordPress. Des applications unitaires aux architectures multi-sites scalables.",
+        "title": "Services",
+        "description": "J'aide les entreprises a tirer parti de l'IA et des technologies web modernes pour resoudre des problemes concrets. Voici ce que je peux faire pour vous.",
+        "devTitle": "Developpement Web Full-Stack",
+        "devDesc": "Applications web sur mesure avec Django, Symfony, Laravel ou WordPress. Du MVP aux plateformes complexes, je gere le front-end, le back-end, les APIs et le deploiement. Des architectures scalables qui evoluent avec votre business.",
+        "devTags": "Django, Symfony, Laravel, WordPress, React, Next.js",
+        "auditTitle": "Audit IA",
+        "auditDesc": "J'analyse vos workflows, donnees et infrastructure existants pour identifier ou l'IA peut apporter un vrai ROI. Vous obtenez une feuille de route claire avec des opportunites priorisees -- pas un rapport generique.",
+        "auditTags": "Analyse de Processus, Evaluation ROI, Feuille de Route",
+        "automationTitle": "Automatisation de Workflows",
+        "automationDesc": "Automatisez les taches repetitives avec des agents intelligents. Du traitement de donnees aux workflows email, je construis des systemes autonomes qui font le travail pendant que vous vous concentrez sur l'essentiel.",
+        "automationTags": "Workflows Agentiques, Automatisation, Pipelines de Donnees",
+        "llmTitle": "Integration LLM sur Mesure",
+        "llmDesc": "Integrez des modeles de langage dans vos systemes existants. Fine-tuning, pipelines RAG, prompt engineering et serveurs MCP custom qui connectent l'IA a vos donnees business de maniere securisee.",
+        "llmTags": "Claude API, OpenAI, RAG, Fine-Tuning, Serveurs MCP",
+        "chatbotTitle": "Chatbots IA",
+        "chatbotDesc": "Des chatbots sur mesure, entraines sur votre contenu, qui comprennent vraiment votre business. Deployes sur votre site ou vos outils internes, avec des reponses precises au lieu de reponses IA generiques.",
+        "chatbotTags": "Chatbase, Entrainement Custom, Integration Web",
         "consultTitle": "Developpement Assiste par IA",
-        "consultDesc": "J'utilise l'IA comme element central de ma façon de concevoir les produits. Claude Code, workflows agentiques et outillage moderne pour accelerer la livraison sans compromis sur la qualite."
+        "consultDesc": "J'utilise l'IA comme element central de ma maniere de concevoir les produits. Claude Code, workflows agentiques et outillage moderne pour livrer plus vite sans couper les coins. Disponible pour du pair-programming et de la formation d'equipe.",
+        "consultTags": "Claude Code, Dev Agentique, Formation Equipe"
     },
     "Experience": {
         "title": "Parcours",

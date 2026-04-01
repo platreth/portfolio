@@ -31,14 +31,26 @@
         "statsLanguagesLabel": "Talen Gesproken"
     },
     "Services": {
-        "title": "Wat Ik Doe",
-        "description": "Van AI-integratie tot full-stack ontwikkeling, ik lever oplossingen op maat van uw bedrijfsdoelen.",
-        "aiTitle": "AI & Agentische Oplossingen",
-        "aiDesc": "Custom AI-chatbots, agentische workflows met Claude/OpenAI, RAG-pipelines, prompt engineering en custom MCP-servers die uw AI verbinden met uw data.",
-        "devTitle": "Full-Stack Ontwikkeling",
-        "devDesc": "Productie webapplicaties met Django, Symfony, Laravel en WordPress. Van enkele apps tot schaalbare multi-site architecturen.",
+        "title": "Diensten",
+        "description": "Ik help bedrijven AI en moderne webtechnologieen in te zetten om echte problemen op te lossen. Dit kan ik voor u doen.",
+        "devTitle": "Full-Stack Webontwikkeling",
+        "devDesc": "Custom webapplicaties gebouwd met Django, Symfony, Laravel of WordPress. Van MVP's tot complexe platforms, ik regel front-end, back-end, API's en deployment. Schaalbare architecturen die meegroeien met uw bedrijf.",
+        "devTags": "Django, Symfony, Laravel, WordPress, React, Next.js",
+        "auditTitle": "AI Readiness Audit",
+        "auditDesc": "Ik analyseer uw bestaande workflows, data en infrastructuur om te identificeren waar AI echte ROI kan leveren. U krijgt een duidelijke roadmap met geprioriteerde kansen -- geen generiek rapport.",
+        "auditTags": "Procesanalyse, ROI Beoordeling, Strategische Roadmap",
+        "automationTitle": "Workflow Automatisering",
+        "automationDesc": "Automatiseer repetitieve taken met intelligente agents. Van dataverwerking tot e-mailworkflows, ik bouw autonome systemen die het werk doen terwijl u zich richt op wat belangrijk is.",
+        "automationTags": "Agentische Workflows, Procesautomatisering, Datapipelines",
+        "llmTitle": "Custom LLM Integratie",
+        "llmDesc": "Integreer grote taalmodellen in uw bestaande systemen. Fine-tuning, RAG-pipelines, prompt engineering en custom MCP-servers die AI veilig verbinden met uw bedrijfsdata.",
+        "llmTags": "Claude API, OpenAI, RAG, Fine-Tuning, MCP Servers",
+        "chatbotTitle": "AI Chatbots",
+        "chatbotDesc": "Custom chatbots getraind op uw content die uw bedrijf echt begrijpen. Gedeployed op uw website of interne tools, met accurate antwoorden in plaats van generieke AI-reacties.",
+        "chatbotTags": "Chatbase, Custom Training, Website Integratie",
         "consultTitle": "AI-Ondersteunde Ontwikkeling",
-        "consultDesc": "Ik gebruik AI als kernonderdeel van hoe ik producten bouw. Claude Code, agentische workflows en moderne tooling om levering te versnellen zonder kwaliteitsverlies."
+        "consultDesc": "Ik gebruik AI als kernonderdeel van hoe ik producten bouw. Claude Code, agentische workflows en moderne tooling om sneller te leveren zonder concessies. Beschikbaar voor pair-programming en teamtraining.",
+        "consultTags": "Claude Code, Agentische Dev, Teamtraining"
     },
     "Experience": {
         "title": "Ervaring",
