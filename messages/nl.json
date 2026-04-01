@@ -26,10 +26,10 @@
         "statsYearsLabel": "Jaar Ervaring",
         "statsAI": "2+",
         "statsAILabel": "Jaar in AI/LLM",
-        "statsUsers": "1M+",
-        "statsUsersLabel": "Gebruikers Gemigreerd",
-        "statsLanguages": "3",
-        "statsLanguagesLabel": "Talen Gesproken"
+        "statsClients": "10+",
+        "statsClientsLabel": "Tevreden Klanten",
+        "statsProjects": "20+",
+        "statsProjectsLabel": "Projecten Opgeleverd"
     },
     "Services": {
         "title": "Diensten",

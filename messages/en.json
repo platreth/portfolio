@@ -26,10 +26,10 @@
         "statsYearsLabel": "Years of Experience",
         "statsAI": "2+",
         "statsAILabel": "Years in AI/LLM",
-        "statsUsers": "1M+",
-        "statsUsersLabel": "Users Migrated",
-        "statsLanguages": "3",
-        "statsLanguagesLabel": "Languages Spoken"
+        "statsClients": "10+",
+        "statsClientsLabel": "Happy Clients",
+        "statsProjects": "20+",
+        "statsProjectsLabel": "Projects Delivered"
     },
     "Services": {
         "title": "Services",

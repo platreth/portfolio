@@ -77,8 +77,8 @@ export default function Home() {
             {[
               { value: tAbout('statsYears'), label: tAbout('statsYearsLabel') },
               { value: tAbout('statsAI'), label: tAbout('statsAILabel') },
-              { value: tAbout('statsUsers'), label: tAbout('statsUsersLabel') },
-              { value: tAbout('statsLanguages'), label: tAbout('statsLanguagesLabel') },
+              { value: tAbout('statsClients'), label: tAbout('statsClientsLabel') },
+              { value: tAbout('statsProjects'), label: tAbout('statsProjectsLabel') },
             ].map((stat, i) => (
               <div key={i} className="card rounded-xl p-6 text-center">
                 <div className="text-3xl md:text-4xl font-bold text-brand-600 dark:text-brand-400 mb-1">{stat.value}</div>
