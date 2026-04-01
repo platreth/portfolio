@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, DM_Sans } from "next/font/google";
 import "../globals.css";
-import { constructMetadata, generateProfessionalServiceSchema } from "@/utils/seo-metadata";
+import { constructMetadata, generateProfessionalServiceSchema, generateLocalBusinessSchema } from "@/utils/seo-metadata";
 import { Footer } from "@/components/ui/Footer";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
@@ -21,9 +21,13 @@ const dmSans = DM_Sans({
 
 import { SITE_CONFIG } from "@/utils/seo-metadata";
 
-export const metadata: Metadata = constructMetadata({
-  metadataBase: new URL(SITE_CONFIG.url),
-});
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return constructMetadata({
+    metadataBase: new URL(SITE_CONFIG.url),
+    locale,
+  });
+}
 
 import { MobileMenu } from "@/components/ui/MobileMenu";
 
@@ -36,10 +40,17 @@ export default async function RootLayout({
 }>) {
   const { locale } = await params;
   const messages = await getMessages();
-  const jsonLd = generateProfessionalServiceSchema();
+  const professionalServiceSchema = generateProfessionalServiceSchema();
+  const localBusinessSchema = generateLocalBusinessSchema();
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <link rel="alternate" hrefLang="en" href={`${SITE_CONFIG.url}/en`} />
+        <link rel="alternate" hrefLang="fr" href={`${SITE_CONFIG.url}/fr`} />
+        <link rel="alternate" hrefLang="nl" href={`${SITE_CONFIG.url}/nl`} />
+        <link rel="alternate" hrefLang="x-default" href={`${SITE_CONFIG.url}/en`} />
+      </head>
       <body
         suppressHydrationWarning
         className={`${spaceGrotesk.variable} ${dmSans.variable} antialiased min-h-screen flex flex-col font-body bg-background text-foreground selection:bg-brand-500/20 selection:text-brand-900 dark:selection:text-brand-200`}
@@ -53,7 +64,11 @@ export default async function RootLayout({
           >
             <script
               type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
             />
             <Navbar />
             <MobileMenu />
