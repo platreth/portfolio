@@ -135,6 +135,21 @@
         "fact2": "Vloeiend in Frans en Engels",
         "fact3": "Altijd in voor een koffiegesprek over AI, tech of het leven in Nederland"
     },
+    "FAQ": {
+        "title": "Veelgestelde Vragen",
+        "q1": "Welke soorten AI-oplossingen bouwt u?",
+        "a1": "Ik bouw custom AI-chatbots getraind op uw bedrijfscontent, agentische workflows die repetitieve taken automatiseren, RAG-pipelines voor intelligent documenten ophalen, custom MCP-servers die LLMs veilig verbinden met uw data, en LLM-integraties met Claude, OpenAI of lokale modellen zoals Llama.",
+        "q2": "Kunt u AI integreren in mijn bestaande applicatie?",
+        "a2": "Ja. Ik ben gespecialiseerd in het toevoegen van AI-functionaliteit aan bestaande systemen zonder alles opnieuw te bouwen. Of het nu een PHP/Symfony-app, een Django-platform of een WordPress-site is, ik kan chatbots, contentgeneratie of automatisering integreren in uw huidige stack.",
+        "q3": "Werkt u remote of on-site?",
+        "a3": "Beide. Ik ben gevestigd in Nederland en beschikbaar voor remote werk wereldwijd. Ik kan ook on-site werken in Nederland voor projecten die dat vereisen. De meeste klanten werken remote met mij samen.",
+        "q4": "Wat is een AI readiness audit?",
+        "a4": "Het is een analyse van uw huidige workflows, data en infrastructuur om te identificeren waar AI de hoogste ROI kan leveren. U krijgt een geprioriteerde roadmap met concrete automatiseringskansen, geschatte impact en implementatieaanbevelingen -- geen generiek rapport.",
+        "q5": "Wat is een custom MCP-server?",
+        "a5": "MCP (Model Context Protocol) is een standaard waarmee AI-modellen veilig toegang krijgen tot uw bedrijfsdata. Ik bouw custom MCP-servers die Claude of andere LLMs verbinden met uw databases, API's en interne tools -- zodat de AI met uw echte data werkt in plaats van te gokken.",
+        "q6": "Met welke technologieën werkt u?",
+        "a6": "Voor AI: Python, Claude API, OpenAI, Llama, RAG, MCP-servers, Claude Code. Voor webontwikkeling: Django, Symfony, Laravel, WordPress, React, Next.js. Voor infrastructuur: Docker, Kubernetes, GCP, AWS. Ik kies het juiste gereedschap voor elk project."
+    },
     "Hub": {
         "title": "Laatste Artikelen",
         "description": "Gedachten over AI, engineering en het bouwen van producten.",

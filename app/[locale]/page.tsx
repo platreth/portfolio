@@ -1,4 +1,4 @@
-import { generateSoftwareSourceCodeSchema } from "@/utils/seo-metadata";
+import { generateSoftwareSourceCodeSchema, generateFAQSchema } from "@/utils/seo-metadata";
 import { ArrowRight, ArrowDown, Brain, Code, Cpu, Briefcase, MapPin, Zap, Truck, FileText, Microscope, Search, Workflow, MessageSquare, Wrench } from 'lucide-react';
 import { ContactForm } from "@/components/ui/Contact";
 import { AboutMe } from "@/components/sections/AboutMe";
@@ -14,8 +14,19 @@ export default function Home() {
   const tProjects = useTranslations('Projects');
   const tSkills = useTranslations('Skills');
   const tContact = useTranslations('Contact');
+  const tFAQ = useTranslations('FAQ');
   const tHub = useTranslations('Hub');
   const jsonLd = generateSoftwareSourceCodeSchema();
+
+  const faqItems = [
+    { question: tFAQ('q1'), answer: tFAQ('a1') },
+    { question: tFAQ('q2'), answer: tFAQ('a2') },
+    { question: tFAQ('q3'), answer: tFAQ('a3') },
+    { question: tFAQ('q4'), answer: tFAQ('a4') },
+    { question: tFAQ('q5'), answer: tFAQ('a5') },
+    { question: tFAQ('q6'), answer: tFAQ('a6') },
+  ];
+  const faqJsonLd = generateFAQSchema(faqItems);
 
   return (
     <>
@@ -259,6 +270,30 @@ export default function Home() {
               <p className="text-stone-600 dark:text-stone-400 text-sm leading-relaxed mb-4">{tProjects('llmDesc')}</p>
               <span className="text-xs font-medium text-stone-500 dark:text-stone-500">{tProjects('experiment')}</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-24 border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <div className="container mx-auto px-6 lg:px-8 max-w-3xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-stone-900 dark:text-stone-50">{tFAQ('title')}</h2>
+          <div className="space-y-6">
+            {faqItems.map((faq, i) => (
+              <details key={i} className="group card rounded-xl">
+                <summary className="flex items-center justify-between cursor-pointer p-6 font-semibold text-stone-900 dark:text-stone-50 list-none">
+                  {faq.question}
+                  <span className="ml-4 text-stone-400 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+                </summary>
+                <div className="px-6 pb-6 text-stone-600 dark:text-stone-400 leading-relaxed -mt-2">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

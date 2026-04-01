@@ -135,6 +135,21 @@
         "fact2": "Fluent in French and English",
         "fact3": "Always up for a coffee chat about AI, tech, or life in the Netherlands"
     },
+    "FAQ": {
+        "title": "Frequently Asked Questions",
+        "q1": "What types of AI solutions do you build?",
+        "a1": "I build custom AI chatbots trained on your business content, agentic workflows that automate repetitive tasks, RAG pipelines for intelligent document retrieval, custom MCP servers that securely connect LLMs to your data, and LLM integrations using Claude, OpenAI, or local models like Llama.",
+        "q2": "Can you integrate AI into my existing application?",
+        "a2": "Yes. I specialize in adding AI capabilities to existing systems without rebuilding from scratch. Whether it's a PHP/Symfony app, a Django platform, or a WordPress site, I can integrate chatbots, content generation, or automation features into your current stack.",
+        "q3": "Do you work remotely or on-site?",
+        "a3": "Both. I'm based in the Netherlands and available for remote work worldwide. I can also work on-site in the Netherlands for projects that require it. Most of my clients work with me remotely.",
+        "q4": "What is an AI readiness audit?",
+        "a4": "It's an analysis of your current workflows, data, and infrastructure to identify where AI can deliver the highest ROI. You get a prioritized roadmap with concrete automation opportunities, estimated impact, and implementation recommendations -- not a generic report.",
+        "q5": "What is a custom MCP server?",
+        "a5": "MCP (Model Context Protocol) is a standard that lets AI models securely access your business data. I build custom MCP servers that connect Claude or other LLMs to your databases, APIs, and internal tools -- so the AI can work with your real data instead of guessing.",
+        "q6": "What technologies do you work with?",
+        "a6": "For AI: Python, Claude API, OpenAI, Llama, RAG, MCP servers, Claude Code. For web development: Django, Symfony, Laravel, WordPress, React, Next.js. For infrastructure: Docker, Kubernetes, GCP, AWS. I choose the right tool for each project."
+    },
     "Hub": {
         "title": "Latest Articles",
         "description": "Thoughts on AI, engineering, and building products.",

@@ -135,6 +135,21 @@
         "fact2": "Bilingue français et anglais",
         "fact3": "Toujours partant pour un café et discuter d'IA, de tech, ou de la vie aux Pays-Bas"
     },
+    "FAQ": {
+        "title": "Questions Fréquentes",
+        "q1": "Quels types de solutions IA construisez-vous ?",
+        "a1": "Je construis des chatbots IA sur mesure entraînés sur votre contenu, des workflows agentiques qui automatisent les tâches répétitives, des pipelines RAG pour la recherche intelligente de documents, des serveurs MCP custom qui connectent les LLMs à vos données de manière sécurisée, et des intégrations LLM avec Claude, OpenAI ou des modèles locaux comme Llama.",
+        "q2": "Pouvez-vous intégrer l'IA dans mon application existante ?",
+        "a2": "Oui. Je suis spécialisé dans l'ajout de fonctionnalités IA aux systèmes existants sans tout reconstruire. Que ce soit une app PHP/Symfony, une plateforme Django ou un site WordPress, je peux intégrer des chatbots, de la génération de contenu ou de l'automatisation dans votre stack actuel.",
+        "q3": "Travaillez-vous à distance ou sur site ?",
+        "a3": "Les deux. Je suis basé aux Pays-Bas et disponible en remote dans le monde entier. Je peux aussi travailler sur site aux Pays-Bas pour les projets qui le nécessitent. La plupart de mes clients travaillent avec moi à distance.",
+        "q4": "Qu'est-ce qu'un audit de maturité IA ?",
+        "a4": "C'est une analyse de vos workflows, données et infrastructure actuels pour identifier où l'IA peut apporter le meilleur ROI. Vous obtenez une feuille de route priorisée avec des opportunités d'automatisation concrètes, l'impact estimé et des recommandations d'implémentation -- pas un rapport générique.",
+        "q5": "Qu'est-ce qu'un serveur MCP custom ?",
+        "a5": "MCP (Model Context Protocol) est un standard qui permet aux modèles IA d'accéder à vos données business de manière sécurisée. Je construis des serveurs MCP custom qui connectent Claude ou d'autres LLMs à vos bases de données, APIs et outils internes -- pour que l'IA travaille avec vos vraies données au lieu de deviner.",
+        "q6": "Avec quelles technologies travaillez-vous ?",
+        "a6": "Pour l'IA : Python, Claude API, OpenAI, Llama, RAG, serveurs MCP, Claude Code. Pour le web : Django, Symfony, Laravel, WordPress, React, Next.js. Pour l'infrastructure : Docker, Kubernetes, GCP, AWS. Je choisis le bon outil pour chaque projet."
+    },
     "Hub": {
         "title": "Derniers Articles",
         "description": "Réflexions sur l'IA, l'ingénierie et la création de produits.",
