@@ -23,7 +23,7 @@ export function AboutMe() {
                         <div className="absolute -bottom-4 -right-4 bg-white dark:bg-stone-900 rounded-xl shadow-lg p-3 border border-stone-200 dark:border-stone-700">
                             <div className="flex items-center gap-2 text-sm">
                                 <MapPin className="w-4 h-4 text-brand-500" />
-                                <span className="font-medium text-stone-900 dark:text-stone-50">Utrecht, NL</span>
+                                <span className="font-medium text-stone-900 dark:text-stone-50">Netherlands</span>
                             </div>
                         </div>
                     </div>

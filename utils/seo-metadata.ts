@@ -4,9 +4,9 @@ import { Metadata } from 'next';
 export const SITE_CONFIG = {
   name: 'Hugo Platret',
   title: 'AI Software Engineer & Full-Stack Developer',
-  description: 'AI Software Engineer with 7 years of full-stack experience. Building AI-powered systems, agentic workflows, and production-grade web applications in Utrecht.',
+  description: 'AI Software Engineer with 7 years of full-stack experience. Building AI-powered systems, agentic workflows, and production-grade web applications. Available remotely and in the Netherlands.',
   url: 'https://www.hugoplatret.nl',
-  location: 'Utrecht, Netherlands',
+  location: 'Netherlands / Remote',
 };
 
 export function generateProfessionalServiceSchema() {
@@ -77,7 +77,7 @@ export function constructMetadata({
   description?: string;
   image?: string;
 } & Metadata): Metadata {
-  const fullTitle = title ? `${title} | ${SITE_CONFIG.name}` : `${SITE_CONFIG.title} in Utrecht`;
+  const fullTitle = title ? `${title} | ${SITE_CONFIG.name}` : `${SITE_CONFIG.title} | ${SITE_CONFIG.name}`;
 
   return {
     title: fullTitle,

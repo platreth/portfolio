@@ -6,10 +6,11 @@
         "projects": "Projets",
         "blog": "Blog",
         "contact": "Contact",
-        "letsTalk": "Discutons"
+        "letsTalk": "Discutons",
+        "available": "Disponible"
     },
     "Hero": {
-        "available": "Disponible -- Utrecht / Remote",
+        "available": "Disponible -- Remote / Pays-Bas",
         "title": "Je vois un probleme, je construis une solution.",
         "subtitle": "Vite.",
         "description": "Ingenieur Logiciel IA avec 7 ans d'experience full-stack. Je conçois des systemes alimentes par l'IA, des workflows agentiques et des applications web production-ready.",
@@ -106,7 +107,7 @@
     },
     "Contact": {
         "title": "Travaillons ensemble",
-        "description": "Un projet en tete ? Je suis disponible en freelance a Utrecht et a distance.",
+        "description": "Un projet en tete ? Je suis disponible en freelance a distance ou sur site aux Pays-Bas.",
         "form": {
             "name": "Nom",
             "email": "Email",
@@ -128,9 +129,9 @@
     },
     "AboutMe": {
         "title": "Au-dela du Code",
-        "intro": "Je suis Hugo, un developpeur français qui a demenage a Utrecht il y a 2 ans. Bien que je sois plonge dans l'intelligence artificielle tous les jours, je crois que meme dans un monde bientot pilote par celui-ci, la connexion humaine compte plus que jamais.",
-        "philosophy": "Que ce soit autour d'un cafe a Utrecht ou lors d'un appel video, les meilleures solutions viennent de vraies conversations, alors discutons !",
-        "fact1": "Originaire de France, base a Utrecht",
+        "intro": "Je suis Hugo, un developpeur français qui a demenage aux Pays-Bas il y a 2 ans. Bien que je sois plonge dans l'intelligence artificielle tous les jours, je crois que meme dans un monde bientot pilote par celui-ci, la connexion humaine compte plus que jamais.",
+        "philosophy": "Que ce soit autour d'un cafe ou lors d'un appel video, les meilleures solutions viennent de vraies conversations, alors discutons !",
+        "fact1": "Originaire de France, base aux Pays-Bas",
         "fact2": "Bilingue français et anglais",
         "fact3": "Toujours partant pour un cafe et discuter d'IA, de tech, ou de la vie aux Pays-Bas"
     },
@@ -142,6 +143,6 @@
     },
     "Footer": {
         "title": "Hugo Platret",
-        "rights": "Ingenieur Logiciel IA -- Utrecht, Pays-Bas"
+        "rights": "Ingenieur Logiciel IA -- Pays-Bas / Remote"
     }
 }

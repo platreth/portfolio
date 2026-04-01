@@ -6,10 +6,11 @@
         "projects": "Projecten",
         "blog": "Blog",
         "contact": "Contact",
-        "letsTalk": "Laten we praten"
+        "letsTalk": "Laten we praten",
+        "available": "Beschikbaar"
     },
     "Hero": {
-        "available": "Beschikbaar -- Utrecht / Remote",
+        "available": "Beschikbaar -- Remote / Nederland",
         "title": "Ik zie een probleem, ik bouw een oplossing.",
         "subtitle": "Snel.",
         "description": "AI Software Engineer met 7 jaar full-stack ervaring. Ik bouw AI-aangedreven systemen, agentische workflows en productie-klare webapplicaties.",
@@ -106,7 +107,7 @@
     },
     "Contact": {
         "title": "Laten we samenwerken",
-        "description": "Een project in gedachten? Ik ben beschikbaar als freelancer in Utrecht en op afstand.",
+        "description": "Een project in gedachten? Ik ben beschikbaar als freelancer op afstand of on-site in Nederland.",
         "form": {
             "name": "Naam",
             "email": "E-mail",
@@ -128,9 +129,9 @@
     },
     "AboutMe": {
         "title": "Meer dan Code",
-        "intro": "Ik ben Hugo, een Franse developer die 2 jaar geleden naar Utrecht verhuisde. Hoewel ik elke dag ondergedompeld ben in kunstmatige intelligentie, geloof ik dat zelfs in een wereld die binnenkort door AI wordt aangestuurd, menselijke connectie meer dan ooit telt.",
-        "philosophy": "Of het nu koffie drinken in Utrecht is of een videogesprek, de beste oplossingen komen voort uit echte gesprekken -- dus laten we praten!",
-        "fact1": "Oorspronkelijk uit Frankrijk, nu gevestigd in Utrecht",
+        "intro": "Ik ben Hugo, een Franse developer die 2 jaar geleden naar Nederland verhuisde. Hoewel ik elke dag ondergedompeld ben in kunstmatige intelligentie, geloof ik dat zelfs in een wereld die binnenkort door AI wordt aangestuurd, menselijke connectie meer dan ooit telt.",
+        "philosophy": "Of het nu een koffiegesprek is of een videocall, de beste oplossingen komen voort uit echte gesprekken -- dus laten we praten!",
+        "fact1": "Oorspronkelijk uit Frankrijk, nu gevestigd in Nederland",
         "fact2": "Vloeiend in Frans en Engels",
         "fact3": "Altijd in voor een koffiegesprek over AI, tech of het leven in Nederland"
     },
@@ -142,6 +143,6 @@
     },
     "Footer": {
         "title": "Hugo Platret",
-        "rights": "AI Software Engineer -- Utrecht, Nederland"
+        "rights": "AI Software Engineer -- Nederland / Remote"
     }
 }

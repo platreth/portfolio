@@ -71,8 +71,8 @@ export function MobileMenu() {
 
                 <div className="absolute bottom-8 left-8 right-8">
                     <div className="p-4 rounded-xl bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700">
-                        <div className="text-xs font-semibold text-brand-600 dark:text-brand-400 mb-2 uppercase tracking-wider">Available for hire</div>
-                        <p className="text-sm text-stone-600 dark:text-stone-400 mb-3">Utrecht / Remote</p>
+                        <div className="text-xs font-semibold text-brand-600 dark:text-brand-400 mb-2 uppercase tracking-wider">{t('available')}</div>
+                        <p className="text-sm text-stone-600 dark:text-stone-400 mb-3">Remote / Netherlands</p>
                         <Link
                             href="/#contact"
                             onClick={() => setIsOpen(false)}
