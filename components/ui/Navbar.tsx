@@ -20,7 +20,7 @@ export function Navbar() {
         <header className="fixed top-0 left-0 right-0 z-40 hidden md:block">
             <div className="container mx-auto px-6 lg:px-8 py-5 flex items-center justify-between">
                 <Link href="/" className="font-heading font-bold text-xl text-stone-900 dark:text-stone-50 hover:opacity-80 transition-opacity">
-                    Hugo Platret
+                    ZAAMSFLOW<span className="text-brand-600 dark:text-brand-400">.</span>
                 </Link>
 
                 <nav className="flex items-center gap-1 p-1 rounded-full bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border border-stone-200 dark:border-stone-800 shadow-sm">
