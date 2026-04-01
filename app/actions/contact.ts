@@ -40,8 +40,8 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
 
     try {
         await resend.emails.send({
-            from: 'Contact <onboarding@resend.dev>', // Default Resend test domain
-            to: 'zaamsflow@gmail.com',
+            from: 'Contact <contact@zaamsflow.com>',
+            to: 'hugo.platret@gmail.com',
             replyTo: email,
             subject: `[Portfolio] New ${type} inquiry from ${name}`,
             text: `
