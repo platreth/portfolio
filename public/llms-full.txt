@@ -1,0 +1,123 @@
+# Hugo Platret — AI Software Engineer (Full Profile)
+
+> AI Software Engineer with 7 years of full-stack experience. I build AI-powered systems, agentic workflows, and production-grade web applications. Based in the Netherlands, available remotely worldwide.
+
+## About
+
+Full-stack developer with 7 years of engineering experience, with the last 2 years focused on agentic AI, LLM integration, and AI-assisted development. I build AI-powered systems and automation workflows — and I use AI as a core part of how I engineer products.
+
+I work hands-on with Python, Anthropic/Claude APIs, local LLMs (Llama), RAG concepts, and custom MCP servers. I am an expert Claude Code user and follow new AI tooling closely.
+
+My engineering foundation is in PHP/Symfony, Docker, and cloud infrastructure — giving me strong production instincts alongside my AI work.
+
+## Services in Detail
+
+### Full-Stack Web Development
+Custom web applications built with Django, Symfony, Laravel, or WordPress. From MVPs to complex platforms, I handle front-end, back-end, APIs, and deployment. Scalable architectures that grow with your business.
+Technologies: Django, Symfony, Laravel, WordPress, React, Next.js, PHP 8, Python, TypeScript
+
+### AI Readiness Audit
+Analysis of existing workflows, data, and infrastructure to identify where AI can deliver real ROI. Deliverable is a prioritized roadmap with concrete automation opportunities, estimated impact, and implementation recommendations.
+Includes: Process analysis, data assessment, ROI estimation, strategic roadmap
+
+### Workflow Automation
+Automation of repetitive tasks with intelligent agents. From data processing pipelines to email workflows, I build autonomous systems that handle work autonomously.
+Technologies: Python, LangGraph, agentic workflows, Claude API, custom automation
+
+### Custom LLM Integration
+Integration of large language models into existing systems. Fine-tuning, RAG pipelines, prompt engineering, and custom MCP servers that securely connect AI to business data.
+Technologies: Claude API, OpenAI API, Llama, RAG, FAISS, MCP (Model Context Protocol), prompt engineering
+
+### AI Chatbots
+Custom chatbots trained on business content that understand the specific domain. Deployed on websites or internal tools with accurate, contextual answers.
+Technologies: Chatbase, Claude API, OpenAI, custom training, website embedding
+
+### AI-Assisted Development
+Using AI as a core part of product engineering. Claude Code, agentic workflows, and modern tooling to accelerate delivery. Available for pair-programming sessions and team upskilling.
+Technologies: Claude Code, agentic development workflows, MCP servers
+
+## Professional Experience
+
+### Zaamsflow (Freelance) — AI Software Engineer (2025–Present)
+- Consolidated 16 separate golf club websites into a single unified platform
+- Trained and deployed a custom AI chatbot fine-tuned on client content
+- AI-assisted development (Claude Code, agentic workflows) as core methodology
+- Web solutions from Django applications to scalable WordPress multi-site architectures
+- Tech: Python, Claude Code, custom MCP, Anthropic API, Chatbase, Django, WordPress, PHP, Symfony
+
+### Rentman — Back-End Web Developer (2024–2025)
+- Owned the entire Crew module of event-industry SaaS (crew planning, availability, HR logic)
+- Designed new HR system for holiday management and crew scheduling
+- Built AI content generation feature inside the SaaS platform
+- Refactored core legacy API: migrated array-based responses to typed Symfony objects
+- Scrum Master for team of 5, incident response team member
+- Tech: PHP 8, Laravel, Symfony, MySQL, Docker, Angular, AWS
+
+### Tikamoon — Full-Stack Web Developer (2020–2023)
+- Led major platform migration: transferred 1M+ users to new architecture
+- Restructured entire product database with clean REST API
+- Led front-end development: refactored legacy JavaScript, redesigned product pages
+- Tech: Sylius, Symfony 6, PHP 8, Docker, Kubernetes, GCP, JavaScript
+
+### Insitaction — Junior Back-End Developer (2018–2020)
+- Built back-end APIs and features using Symfony 4 / PHP 7
+- Front-end work with React JS, Twig, and SCSS
+- Tech: Symfony 4, PHP 7, React JS, Twig, SCSS
+
+## Side Projects
+
+### Van Builder AI (Working Prototype)
+AI-powered app that generates a personalised van conversion plan (steps, materials, curated videos) based on car model, budget, needs, and style. Built end-to-end using agentic AI development.
+
+### AI Invoice Negotiator (Working Prototype)
+Agentic tool that takes an invoice and autonomously negotiates a better price via email with supplier support — using multi-turn LLM reasoning over a real email thread.
+
+### Local LLM Fine-Tuning
+Trained and ran Llama locally, experimenting with instruction tuning, model behaviour, and performance on constrained hardware.
+
+## Complete Tech Stack
+
+### AI & ML
+Agentic AI systems, LLM integration (Anthropic/Claude, OpenAI, local Llama), custom MCP servers, prompt engineering, chatbot training (Chatbase), RAG pipelines, Claude Code
+
+### Languages
+Python, PHP 8, JavaScript (native), TypeScript
+
+### Frameworks & Tools
+Symfony, Django, Laravel, React JS, Angular, Next.js, Docker, Kubernetes, RabbitMQ, CI/CD (GitHub Actions)
+
+### Cloud & Infrastructure
+GCP, AWS, MySQL
+
+### Languages Spoken
+French (native), English (fluent)
+
+## Education
+
+- Open Classroom — Back-End Symfony Web Developer (HBO level) — 2020
+- University of Savoie Mont Blanc — Computer Science DUT — 2018
+
+## FAQ
+
+### What types of AI solutions do you build?
+Custom AI chatbots trained on business content, agentic workflows that automate repetitive tasks, RAG pipelines for intelligent document retrieval, custom MCP servers that securely connect LLMs to data, and LLM integrations using Claude, OpenAI, or local models like Llama.
+
+### Can you integrate AI into my existing application?
+Yes. I specialize in adding AI capabilities to existing systems without rebuilding from scratch. Whether it's a PHP/Symfony app, a Django platform, or a WordPress site, I can integrate chatbots, content generation, or automation features into the current stack.
+
+### Do you work remotely or on-site?
+Both. Based in the Netherlands and available for remote work worldwide. Also available on-site in the Netherlands. Most clients work remotely.
+
+### What is a custom MCP server?
+MCP (Model Context Protocol) is a standard that lets AI models securely access business data. I build custom MCP servers that connect Claude or other LLMs to databases, APIs, and internal tools — so the AI works with real data instead of guessing.
+
+### What is an AI readiness audit?
+An analysis of current workflows, data, and infrastructure to identify where AI can deliver the highest ROI. Deliverable is a prioritized roadmap with concrete automation opportunities, estimated impact, and implementation recommendations.
+
+## Contact
+
+- Website: https://www.hugoplatret.nl
+- Email: hugo.platret@gmail.com
+- LinkedIn: https://linkedin.com/in/hugoplatret
+- GitHub: https://github.com/hugoplatret
+- Location: Netherlands (available remotely worldwide)

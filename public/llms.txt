@@ -1,0 +1,45 @@
+# Hugo Platret — AI Software Engineer
+
+> AI Software Engineer with 7 years of full-stack experience, based in the Netherlands. Available remotely worldwide.
+
+## Services
+
+- Full-Stack Web Development (Django, Symfony, Laravel, WordPress, React, Next.js)
+- AI Readiness Audits (workflow analysis, ROI assessment, strategic roadmap)
+- Workflow Automation (agentic workflows, process automation, data pipelines)
+- Custom LLM Integration (Claude API, OpenAI, RAG, fine-tuning, MCP servers)
+- AI Chatbots (custom training, website integration, business-specific knowledge)
+- AI-Assisted Development (Claude Code, agentic dev, team training)
+
+## Tech Stack
+
+- AI & ML: Agentic AI, LLM Integration (Claude, OpenAI, Llama), Custom MCP Servers, RAG, Prompt Engineering
+- Languages: Python, PHP 8, JavaScript, TypeScript
+- Frameworks: Symfony, Django, Laravel, React, Angular, Next.js
+- Infrastructure: Docker, Kubernetes, GCP, AWS, MySQL, RabbitMQ, CI/CD
+
+## Experience
+
+- 7+ years software engineering
+- 2+ years focused on AI/LLM integration
+- 10+ satisfied clients
+- 20+ projects delivered
+
+## Key Projects
+
+- Consolidated 16 golf club websites into a unified platform with AI chatbot
+- Built HR system for crew scheduling at Rentman (event-industry SaaS)
+- Led platform migration of 1M+ users at Tikamoon
+- Built AI content generation features inside SaaS platforms
+
+## Contact
+
+- Website: https://www.hugoplatret.nl
+- Email: hugo.platret@gmail.com
+- LinkedIn: https://linkedin.com/in/hugoplatret
+- GitHub: https://github.com/hugoplatret
+- Location: Netherlands (available remotely worldwide)
+
+## llms-full.txt
+
+For more detail, see: https://www.hugoplatret.nl/llms-full.txt
