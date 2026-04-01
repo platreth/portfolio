@@ -42,7 +42,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <body
         suppressHydrationWarning
-        className={`${spaceGrotesk.variable} ${dmSans.variable} antialiased min-h-screen flex flex-col font-body bg-background text-foreground selection:bg-brand-500/30 selection:text-brand-200`}
+        className={`${spaceGrotesk.variable} ${dmSans.variable} antialiased min-h-screen flex flex-col font-body bg-background text-foreground selection:bg-brand-500/20 selection:text-brand-900 dark:selection:text-brand-200`}
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider

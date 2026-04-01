@@ -2,14 +2,12 @@
 import { Metadata } from 'next';
 
 export const SITE_CONFIG = {
-  name: 'Zaamsflow',
-  title: 'Senior PHP Developer & AI Solutions Consultant',
-  description: 'Building high-performance, AI-ready web solutions. Specializing in PHP optimization and Agentic AI implementation in Utrecht.',
-  url: 'https://www.zaamsflow.com',
+  name: 'Hugo Platret',
+  title: 'AI Software Engineer & Full-Stack Developer',
+  description: 'AI Software Engineer with 7 years of full-stack experience. Building AI-powered systems, agentic workflows, and production-grade web applications in Utrecht.',
+  url: 'https://www.hugoplatret.nl',
   location: 'Utrecht, Netherlands',
 };
-
-// --- JSON-LD Generators ---
 
 export function generateProfessionalServiceSchema() {
   return {
@@ -25,21 +23,11 @@ export function generateProfessionalServiceSchema() {
       addressCountry: 'NL',
     },
     areaServed: [
-      {
-        '@type': 'Place',
-        name: 'Utrecht',
-      },
-      {
-        '@type': 'Place',
-        name: 'Randstad',
-      },
-      {
-        '@type': 'Place',
-        name: 'Leidsche Rijn',
-      },
+      { '@type': 'Place', name: 'Utrecht' },
+      { '@type': 'Place', name: 'Randstad' },
+      { '@type': 'Place', name: 'Netherlands' },
     ],
-    knowsAbout: ['PHP', 'Laravel', 'Symfony', 'Agentic AI', 'Next.js', 'Python', 'Machine Learning'],
-    priceRange: '€€€',
+    knowsAbout: ['Agentic AI', 'LLM Integration', 'Python', 'PHP', 'Symfony', 'Django', 'Claude API', 'MCP Servers', 'Full-Stack Development'],
     founder: {
       '@type': 'Person',
       name: 'Hugo Platret',
@@ -55,10 +43,10 @@ export function generateSoftwareSourceCodeSchema() {
       '@type': 'Person',
       name: SITE_CONFIG.name,
     },
-    programmingLanguage: ['PHP', 'Python', 'TypeScript'],
+    programmingLanguage: ['Python', 'PHP', 'TypeScript', 'JavaScript'],
     targetProduct: {
       '@type': 'SoftwareApplication',
-      name: 'Agentic AI Solutions',
+      name: 'AI-Powered Solutions',
       applicationCategory: 'BusinessApplication',
     },
   };
@@ -78,8 +66,6 @@ export function generateFAQSchema(faqs: { question: string; answer: string }[]) 
     })),
   };
 }
-
-// --- Metadata Helpers ---
 
 export function constructMetadata({
   title,
