@@ -9,7 +9,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const ContactSchema = z.object({
     name: z.string().min(2, "Name is required"),
     email: z.string().email("Invalid email address"),
-    type: z.enum(['consultation', 'development', 'legacy', 'other']),
+    type: z.enum(['ai', 'development', 'consulting', 'other']),
     message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
@@ -41,9 +41,9 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
     try {
         await resend.emails.send({
             from: 'Contact <onboarding@resend.dev>', // Default Resend test domain
-            to: 'zaamsflow@gmail.com',
+            to: 'hugo.platret@gmail.com',
             replyTo: email,
-            subject: `[Zaamsflow] New ${type} Inquiry from ${name}`,
+            subject: `[Portfolio] New ${type} inquiry from ${name}`,
             text: `
 Name: ${name}
 Email: ${email}
