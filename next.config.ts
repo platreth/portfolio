@@ -5,7 +5,14 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: '/click2gig',
+        destination: '/click2gig.html',
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
